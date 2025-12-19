@@ -1,7 +1,6 @@
 ---
 author: Ritchie
 date: 2025-12-19T10:40:14+02:00
-# Lastmod: 2021-08-18
 title: Hello, Reader
 categories:
   - introductions
