@@ -23,12 +23,12 @@ theme = 'smigle'
     url = "https://bsky.app/profile/rly0nheart.bsky.social"
   
   [[params.social]]
-    name = "Email"
-    url = "mailto:hello@rly0nheart.com"
-  
-  [[params.social]]
     name = "LinkedIn"
     url = "https://linkedin.com/in/rly0nheart"
+  
+  [[params.social]]
+    name = "Email"
+    url = "mailto:hi@rly0nheart.com"
 
 [menu]
   [[menu.main]]
