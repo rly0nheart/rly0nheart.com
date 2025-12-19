@@ -20,7 +20,7 @@ theme = 'smigle'
 
   [[params.social]]
     name = "Bluesky"
-    url = "https://bsky.app/profile/rly0nheart.bsky.social"
+    url = "https://bsky.app/profile/rly0nheart.com"
   
   [[params.social]]
     name = "LinkedIn"
