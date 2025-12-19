@@ -1,0 +1,48 @@
+<header>
+  <div id="brand">
+    <a class="icon-link" href="{{ .Site.BaseURL }}">
+      <img
+        class="icon"
+        src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
+      />
+    </a>
+    <div class="text">
+      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      <h3>{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
+    </div>
+  </div>
+  <nav>
+    {{ with .Site.Menus.main }}
+      {{ range $index, $value := . }}
+        {{ if $index }} | {{ end }}
+        <a href="{{ .URL | relURL }}">
+          <b>
+            {{ if eq .Name "Home" }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            {{ end }}
+            {{ if eq .Name "About" }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            {{ end }}
+            {{ if eq .Name "Posts" }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21H6a3 3 0 01-3-3v-1h10v2a2 2 0 004 0V5a2 2 0 112 2h-2m2-4H8A3 3 0 005 6v11"/><path d="M9 7h4"/><path d="M9 11h4"/></svg>
+            {{ end }}
+            {{ if eq .Name "Projects" }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            {{ end }}
+            {{ if eq .Name "Categories" }}
+              <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1em"><path d="M5 9h14"></path><path d="M5 15h14"></path><path d="M11 4 7 20"></path><path d="M17 4l-4 16"></path></svg>
+            {{ end }}
+            {{ if eq .Name "Tags" }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8v4.172a2 2 0 00.586 1.414l5.71 5.71a2.41 2.41.0 003.408.0l3.592-3.592a2.41 2.41.0 000-3.408l-5.71-5.71A2 2 0 009.172 6H5A2 2 0 003 8z"/><path d="M18 19l1.592-1.592a4.82 4.82.0 000-6.816L15 6"/><path d="M7 10h-.01"/></svg>
+            {{ end }}
+            {{ if eq .Name "RSS" }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+            {{ end }}
+            {{ .Name }}
+          </b>
+        </a>
+      {{ end }}
+    {{ end }}
+</nav>
+  <hr />
+</header>

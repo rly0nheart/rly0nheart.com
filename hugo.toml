@@ -1,0 +1,67 @@
+baseURL = 'https://rly0nheart.com/'
+languageCode = 'en-GB'
+title = "Ritchie Mwewa"
+theme = 'smigle'
+
+[params]
+  customStylesheets = ["css/reset.css", "css/smigle.css"]
+  brandIconFile = "me.png"
+  subtitle = "@rly0nheart"
+  dateFmt = "2 January 2006"
+  author = "Ritchie Mwewa"
+  
+  [[params.social]]
+    name = "Codeberg"
+    url = "https://codeberg.org/rly0nheart"
+
+  [[params.social]]
+    name = "GitHub"
+    url = "https://github.com/rly0nheart"
+
+  [[params.social]]
+    name = "Bluesky"
+    url = "https://bsky.app/profile/rly0nheart.bsky.social"
+  
+  [[params.social]]
+    name = "Email"
+    url = "mailto:hello@rly0nheart.com"
+  
+  [[params.social]]
+    name = "LinkedIn"
+    url = "https://linkedin.com/in/rly0nheart"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 6
+
+  [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 7

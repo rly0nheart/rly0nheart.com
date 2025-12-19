@@ -1,0 +1,79 @@
+html {
+  overflow-y: scroll
+}
+:root {
+--bgcolor: #282828;
+--dimcolor: #3c3836;
+--fontcolor: #ebdbb2;
+--linkcolor: #fe8019;
+--visitedcolor: #928374;
+--precolor: #ebdbb2;
+--prebgcolor: #1d2021;
+}
+@media (prefers-color-scheme: light) {
+:root {
+--bgcolor: #fbf1c7;
+--dimcolor: #ebdbb2;
+--fontcolor: #3c3836;
+--linkcolor: #fe8019; /*#076678;*/
+--visitedcolor: #928374;
+--precolor: #3c3836;
+--prebgcolor: #f2e5bc;
+  }
+}
+body {
+color: var(--fontcolor);
+background: var(--bgcolor);
+margin: 0;
+}
+a {
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+a:link {
+color: var(--linkcolor);
+}
+a:visited {
+color: var(--visitedcolor);
+}
+a:active {
+color: var(--visitedcolor);
+}
+h1,h2,h3 {
+line-height: 1.2;
+}
+p > code {
+color: var(--precolor);
+background: var(--prebgcolor);
+padding: 2px;
+}
+pre {
+color: var(--precolor);
+background: var(--prebgcolor);
+padding: 24px;
+overflow-x: auto;
+}
+article {
+padding: 5px 0;
+}
+.center  {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+figcaption {
+color: #928374;
+font: 12px/1.5 monospace;
+text-align: center;
+}
+figure {
+margin: auto;
+}
