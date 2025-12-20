@@ -2,6 +2,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ .Site.Params.description }}" />
+  
   {{ if (eq .Title .Site.Title) }}
     {{ with $title := .Title }}
       <title>{{ . }}</title>
@@ -27,5 +28,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   
-  <script src="{{ "js/toggleMoreOrLess.js" | relURL }}" defer></script>
+  {{ range .Site.Params.customScripts }}
+    <script src="{{ . | relURL }}" defer></script>
+  {{ end }}
 </head>
