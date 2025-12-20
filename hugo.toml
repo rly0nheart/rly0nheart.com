@@ -5,7 +5,6 @@ theme = 'smigle'
 
 [params]
   customStylesheets = ["css/reset.css", "css/smigle.css"]
-  customScripts = ["js/toggleMoreOrLess.js"]
   brandIconFile = "me.png"
   subtitle = "@rly0nheart"
   dateFmt = "2 January 2006"
