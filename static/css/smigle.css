@@ -84,9 +84,6 @@ div.post-meta {
   padding: 8px;
 }
 
-
-/* Add to smigle.css */
-
 /* Mobile-first: hide extra items by default */
 header nav .nav-extra {
   display: none;
@@ -124,8 +121,6 @@ footer.expanded .social-extra {
 
 /* Icon for toggle button */
 .expand-toggle svg {
-  width: 16px;
-  height: 16px;
   vertical-align: middle;
   display: inline-block;
 }
