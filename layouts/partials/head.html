@@ -28,7 +28,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   
-  {{ range .Site.Params.customScripts }}
-    <script src="{{ . | relURL }}" defer></script>
-  {{ end }}
+  <script defer>
+    document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('header .expand-toggle').forEach(a=>{a.addEventListener('click',function(){const b=this.closest('nav');b.classList.toggle('expanded');const c=b.classList.contains('expanded'),d=Array.from(this.childNodes).find(a=>a.nodeType===Node.TEXT_NODE);d&&(d.textContent=c?' Less':' More'),c?sessionStorage.setItem('navExpanded','true'):sessionStorage.removeItem('navExpanded')})});document.querySelectorAll('footer .expand-toggle').forEach(a=>{a.addEventListener('click',function(){const b=this.closest('footer');b.classList.toggle('expanded');const c=b.classList.contains('expanded'),d=Array.from(this.childNodes).find(a=>a.nodeType===Node.TEXT_NODE);d&&(d.textContent=c?' Less':' More'),c?sessionStorage.setItem('footerExpanded','true'):sessionStorage.removeItem('footerExpanded')})});if('true'===sessionStorage.getItem('navExpanded')){const a=document.querySelector('#main-nav');if(a){a.classList.add('expanded');const b=a.querySelector('.expand-toggle');if(b){const a=Array.from(b.childNodes).find(a=>a.nodeType===Node.TEXT_NODE);a&&(a.textContent=' Less')}}}if('true'===sessionStorage.getItem('footerExpanded')){const a=document.querySelector('#main-footer');if(a){a.classList.add('expanded');const b=a.querySelector('.expand-toggle');if(b){const a=Array.from(b.childNodes).find(a=>a.nodeType===Node.TEXT_NODE);a&&(a.textContent=' Less')}}}});
+  </script>
 </head>
