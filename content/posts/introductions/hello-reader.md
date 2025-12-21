@@ -2,8 +2,7 @@
 author: Ritchie
 date: 2025-12-19T10:40:14+02:00
 title: Hello, Reader
-subtitle: Welcome to my blog
-lastMode: 2025-12-21T21:59:00+02:00
+lastMod: 2025-12-21T21:59:00+02:00
 categories:
   - introductions
 ---
