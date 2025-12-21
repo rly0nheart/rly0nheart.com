@@ -5,10 +5,8 @@ layout: default
 
 ## Hi, I'm Ritchie Mwewa
 
-I'm a Software Engineer from [**Zambia**](https://en.wikipedia.org/wiki/Zambia), with 5 years of experience, making and trying to break software. I play guitar, and I'm both a mentor and mentee. I've worked as a Software Developer for organisations like **Bellingcat**, and **OSINT For Ukraine**, and I currently do contract work as a Software Engineer for public and private individuals.
+I'm a Software Engineer from [**Zambia**](https://en.wikipedia.org/wiki/Zambia), with 5 years of experience, making and trying to break software. I play guitar, I'm both a mentor and mentee, and I know how to do a backflip :). 
 
-### Why This Blog?
+I've worked as a Software Developer for organisations like **Bellingcat**, and **OSINT For Ukraine**, and I currently do contract work as a Software Engineer for public and private individuals.
 
-Because, sharing is caring.
-
-Feel free to reach out if you want to chat about [**topics**](/categories) you're interested in discussing.
+If you have any questions or want to chat chat about any of the [**topics**](/categories) here, feel free to reach out.
