@@ -29,9 +29,6 @@ body {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
 a:link {
   color: var(--linkcolor);
 }
@@ -41,6 +38,17 @@ a:visited {
 a:active {
   color: var(--visitedcolor);
 }
+
+#main-nav a:hover, #social a:hover {
+  filter: brightness(1.5);
+  text-decoration: underline;
+  transition: all 0.1s ease-in-out;
+}
+a:hover {
+  filter: brightness(1.5);
+  transition: all 0.1s ease-in-out;
+}
+
 h1,
 h2,
 h3 {

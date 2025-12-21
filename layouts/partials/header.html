@@ -1,82 +1,35 @@
+{{- $icons := partial "icons.html" -}}
+
 <header>
   <div id="brand">
-    <a class="icon-link" href="{{ .Site.BaseURL }}">
+    <!--<a class="icon-link" href="{{ .Site.BaseURL }}">-->
       <img
         class="icon"
         src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
       />
-    </a>
+    <!--</a>-->
     <div class="text">
-      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      <!--<a href="{{ .Site.BaseURL }}">--><h1>{{ .Site.Title }}</h1><!--</a>-->
       <h3>{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
     </div>
   </div>
   <nav id="main-nav">
     {{ with .Site.Menus.main }}
       {{ range $index, $value := . }}
-        {{ if le $index 2 }}
-          {{ if $index }} | {{ end }}
-          <a href="{{ .URL | relURL }}">
-            <b>
-              {{ if eq .Name "Home" }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              {{ end }}
-              {{ if eq .Name "About" }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              {{ end }}
-              {{ if eq .Name "Posts" }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21H6a3 3 0 01-3-3v-1h10v2a2 2 0 004 0V5a2 2 0 112 2h-2m2-4H8A3 3 0 005 6v11"/><path d="M9 7h4"/><path d="M9 11h4"/></svg>
-              {{ end }}
-              {{ if eq .Name "Projects" }}
-                <svg width="16" height="16" viewBox="0 0 640 640" fill="currentColor"><path d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/></svg>
-              {{ end }}
-              {{ if eq .Name "Categories" }}
-                <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1em"><path d="M5 9h14"></path><path d="M5 15h14"></path><path d="M11 4 7 20"></path><path d="M17 4l-4 16"></path></svg>
-              {{ end }}
-              {{ if eq .Name "Tags" }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8v4.172a2 2 0 00.586 1.414l5.71 5.71a2.41 2.41.0 003.408.0l3.592-3.592a2.41 2.41.0 000-3.408l-5.71-5.71A2 2 0 009.172 6H5A2 2 0 003 8z"/><path d="M18 19l1.592-1.592a4.82 4.82.0 000-6.816L15 6"/><path d="M7 10h-.01"/></svg>
-              {{ end }}
-              {{ if eq .Name "RSS" }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
-              {{ end }}
-              {{ .Name }}
-            </b>
-          </a>
+        {{ if le $index 3 }}
+          {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a>
         {{ else }}
-          <span class="nav-extra">
-            | <a href="{{ .URL | relURL }}">
-              <b>
-                {{ if eq .Name "Home" }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                {{ end }}
-                {{ if eq .Name "About" }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                {{ end }}
-                {{ if eq .Name "Posts" }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21H6a3 3 0 01-3-3v-1h10v2a2 2 0 004 0V5a2 2 0 112 2h-2m2-4H8A3 3 0 005 6v11"/><path d="M9 7h4"/><path d="M9 11h4"/></svg>
-                {{ end }}
-                {{ if eq .Name "Projects" }}
-                  <svg width="16" height="16" viewBox="0 0 640 640" fill="currentColor"><path d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/></svg>
-                {{ end }}
-                {{ if eq .Name "Categories" }}
-                  <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1em"><path d="M5 9h14"></path><path d="M5 15h14"></path><path d="M11 4 7 20"></path><path d="M17 4l-4 16"></path></svg>
-                {{ end }}
-                {{ if eq .Name "Tags" }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8v4.172a2 2 0 00.586 1.414l5.71 5.71a2.41 2.41.0 003.408.0l3.592-3.592a2.41 2.41.0 000-3.408l-5.71-5.71A2 2 0 009.172 6H5A2 2 0 003 8z"/><path d="M18 19l1.592-1.592a4.82 4.82.0 000-6.816L15 6"/><path d="M7 10h-.01"/></svg>
-                {{ end }}
-                {{ if eq .Name "RSS" }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
-                {{ end }}
-                {{ .Name }}
-              </b>
-            </a>
-          </span>
+          <span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a></span>
         {{ end }}
       {{ end }}
-      {{ if gt (len .) 2 }}
-        | <button class="expand-toggle" aria-label="Toggle more navigation items"><svg width="16" height="16" viewBox="0 0 640 640" fill="currentColor"><path d="M96 320C96 289.1 121.1 264 152 264C182.9 264 208 289.1 208 320C208 350.9 182.9 376 152 376C121.1 376 96 350.9 96 320zM264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320zM488 264C518.9 264 544 289.1 544 320C544 350.9 518.9 376 488 376C457.1 376 432 350.9 432 320C432 289.1 457.1 264 488 264z"/></svg> More</button>
+      {{ if gt (len .) 4 }}
+        <button class="expand-toggle" aria-label="Toggle more navigation items">▼</button>
       {{ end }}
     {{ end }}
   </nav>
   <hr/>
+  <!--Higlight current tab-->
+  <script>
+    (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='filter:brightness(1.5)!important;text-decoration:underline'})})();
+  </script>
 </header>

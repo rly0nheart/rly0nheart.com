@@ -11,4 +11,4 @@ I'm a Software Engineer from [**Zambia**](https://en.wikipedia.org/wiki/Zambia),
 
 Because, sharing is caring.
 
-Feel free to reach out if you want to chat about [topics](/categories) you're interested in discussing.
+Feel free to reach out if you want to chat about [**topics**](/categories) you're interested in discussing.

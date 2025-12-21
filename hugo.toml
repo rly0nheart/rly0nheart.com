@@ -5,16 +5,18 @@ theme = 'smigle'
 
 [params]
   customStylesheets = ["css/reset.css", "css/smigle.css"]
-  brandIconFile = "me.png"
-  subtitle = "@rly0nheart"
+  brandIconFile = "logo.png"
+  subtitle = "Bipedal Software Engineer from the Milky Way"
   dateFmt = "2 January 2006"
   author = "Ritchie Mwewa"
   
   [[params.social]]
+    logo = "git"
     name = "Codeberg"
     url = "https://codeberg.org/rly0nheart"
 
   [[params.social]]
+    logo = "github"
     name = "GitHub"
     url = "https://github.com/rly0nheart"
 
@@ -47,21 +49,21 @@ theme = 'smigle'
     weight = 3
 
   [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 4
+
+  [[menu.main]]
     name = "Projects"
     url = "/projects/"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     name = "Categories"
     url = "/categories/"
-    weight = 5
+    weight = 6
 
   [[menu.main]]
     name = "Tags"
     url = "/tags/"
-    weight = 6
-
-  [[menu.main]]
-    name = "RSS"
-    url = "/index.xml"
     weight = 7

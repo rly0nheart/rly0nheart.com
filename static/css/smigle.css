@@ -22,7 +22,8 @@
   font-size: 30px;
 }
 #brand h3 {
-  font-size: 20px;
+  font-size: 15px;
+  color: var(--visitedcolor);
   font-weight: normal;
 }
 #brand .icon {
@@ -36,6 +37,7 @@ header nav {
 }
 h1.title {
   margin: 1.3rem 0 0 0;
+  display: inline-flex;
 }
 h3.subtitle {
   font-weight: normal;
@@ -60,7 +62,8 @@ div.post-meta {
     font-size: 45px;
   }
   #brand h3 {
-    font-size: 25px;
+    font-size: 18px;
+    color: var(--visitedcolor);
   }
 }
 #postsByDate {
@@ -97,7 +100,7 @@ footer .social-extra {
 .expand-toggle {
   background: none;
   border: none;
-  color: var(--linkcolor);
+  color: var(--fontcolor);
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
@@ -107,7 +110,8 @@ footer .social-extra {
 }
 
 .expand-toggle:hover {
-  text-decoration: underline;
+  filter: brightness(1.5);
+  transition: all 0.1s ease-in-out;
 }
 
 /* When expanded, show extra items */
@@ -117,12 +121,6 @@ header nav.expanded .nav-extra {
 
 footer.expanded .social-extra {
   display: inline;
-}
-
-/* Icon for toggle button */
-.expand-toggle svg {
-  vertical-align: middle;
-  display: inline-block;
 }
 
 /* On tablets and up, always show all items */
