@@ -22,10 +22,9 @@
           <span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a></span>
         {{ end }}
       {{ end }}
-      {{ if gt (len .) 4 }}
-        <button class="expand-toggle" aria-label="Toggle more navigation items">▼</button>
-      {{ end }}
+      <button class="expand-toggle" aria-label="Toggle more navigation items">[more]</button>
     {{ end }}
+</p>
   </nav>
   <hr/>
   <!--Higlight current tab-->

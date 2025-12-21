@@ -7,15 +7,13 @@
     Find me around the web:
     <br />
     {{ range $i, $e := .Site.Params.social }}
-      {{ if le $i 2 }}
+      {{ if le $i 1 }}
         {{if $i}} | {{end}} <a href="{{ .url }}" target="_blank">{{- index $icons .name | safeHTML -}}{{- .name -}}</a>
       {{ else }}
         <span class="social-extra"> | <a href="{{ .url }}" target="_blank">{{- index $icons .name | safeHTML -}}{{- .name -}}</a></span>
       {{ end }}
     {{ end }}
-    {{ if gt (len .Site.Params.social) 3 }}
-      <button class="expand-toggle" aria-label="Toggle more social links">▼</button>
-    {{ end }}
+    <button class="expand-toggle" aria-label="Toggle more social links">[more]</button><button class="theme-toggle" aria-label="Toggle dark/light mode">[theme]</button>
   </p>
   {{ end }}
   <p class="copyright">

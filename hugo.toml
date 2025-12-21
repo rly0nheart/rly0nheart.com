@@ -9,6 +9,9 @@ theme = 'smigle'
   subtitle = "Bipedal Software Engineer from the Milky Way"
   dateFmt = "2 January 2006"
   author = "Ritchie Mwewa"
+  enableRobotsTXT = true
+  enableSitemap = true
+  description = "Ritchie Mwewa"
   
   [[params.social]]
     logo = "git"

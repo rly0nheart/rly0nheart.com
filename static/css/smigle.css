@@ -3,6 +3,7 @@
   max-width: 750px;
   margin: 0 auto;
   padding: 10px;
+  transition: all 0.1s ease-in-out;
 }
 #brand {
   display: flex;
@@ -97,7 +98,7 @@ footer .social-extra {
 }
 
 /* Toggle button styling */
-.expand-toggle {
+.expand-toggle, .theme-toggle {
   background: none;
   border: none;
   color: var(--fontcolor);
@@ -109,7 +110,8 @@ footer .social-extra {
   text-decoration: none;
 }
 
-.expand-toggle:hover {
+.theme-toggle:hover, .expand-toggle:hover {
+  scale: 1.1;
   filter: brightness(1.5);
   transition: all 0.1s ease-in-out;
 }

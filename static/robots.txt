@@ -1,0 +1,17 @@
+# Allow Google
+User-agent: Googlebot
+Disallow:
+
+User-agent: Googlebot-Image
+Disallow:
+
+# Allow Brave
+User-agent: Bravebot
+Disallow:
+
+# Allow DuckDuckGo
+User-agent: DuckDuckBot
+Disallow:
+
+User-agent: *
+Disallow: /
