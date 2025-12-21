@@ -111,7 +111,6 @@ footer .social-extra {
 }
 
 .theme-toggle:hover, .expand-toggle:hover {
-  scale: 1.1;
   filter: brightness(1.5);
   transition: all 0.1s ease-in-out;
 }
