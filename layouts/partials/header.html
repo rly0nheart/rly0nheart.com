@@ -30,6 +30,6 @@
   <hr/>
   <!--Higlight current tab-->
   <script>
-    (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='filter:brightness(1.5)!important;text-decoration:underline'})})();
+    (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='filter:brightness(1.5)!important;text-decoration:underline;pointer-events:none'})})();
   </script>
 </header>
