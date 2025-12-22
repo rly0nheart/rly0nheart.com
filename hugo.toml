@@ -4,7 +4,6 @@ title = "Ritchie Mwewa"
 theme = 'smigle'
 
 [params]
-  customStylesheets = ["css/reset.css", "css/smigle.css"]
   brandIconFile = "logo.png"
   subtitle = "Bipedal Software Engineer from the Milky Way"
   dateFmt = "2 January 2006"
