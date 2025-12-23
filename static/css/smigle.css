@@ -40,7 +40,7 @@ h1.title {
   margin: 1.3rem 0 0 0;
   display: inline-flex;
 }
-h1.title:hover {
+a:hover h1.title {
   text-decoration: underline;
 }
 h3.subtitle {
