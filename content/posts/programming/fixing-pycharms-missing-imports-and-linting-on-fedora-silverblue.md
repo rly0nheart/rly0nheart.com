@@ -175,7 +175,7 @@ cd ~/PyCharmMiscProjects
 rm -rf .venv
 ```
 
-Then, in the bottom right of my PyCharm, I clicked on the interpreter name `Python 3.12 (PyCharmMiscProjects)`, then I proceeded to click on `Add New Interpreter` → `Add Local Interpreter`.
+Then, in the bottom right of my PyCharm, I clicked on the interpreter name `Python 3.13 (PyCharmMiscProjects)`, then I proceeded to click on `Add New Interpreter` → `Add Local Interpreter`.
 
 From here, a window popped up which is used to create a venv, and the values for each input should be as follows:
 
