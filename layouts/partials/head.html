@@ -1,5 +1,6 @@
 <head>
   <meta charset="utf-8" />
+  <meta name="follow.it-verification-code" content="S6c6x42yqfzfmKRQw4zv" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ .Site.Params.description }}" />
   
@@ -16,6 +17,7 @@
   <link rel="stylesheet" href="{{ "css/reset.css" | relURL }}"/>
   <link rel="stylesheet" href="{{ "css/font.css" | relURL }}"/>
   <link rel="stylesheet" href="{{ "css/smigle.css" | relURL }}"/>
+  <link rel="stylesheet" href="{{ "css/followit.css" | relURL }}"/>
   {{ range .Site.Params.customStylesheets }}
     <link rel="stylesheet" href="{{ . | relURL }}"/>
   {{ end }}
@@ -28,13 +30,13 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   
-  <!--Handles the button that shows more items in tab or footer (mobile view)-->
+  <!--Handles the button that shows more items in tab or footer (mobile view)
   <script defer>
     document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('header .expand-toggle').forEach(a=>{a.addEventListener('click',function(){const b=this.closest('nav');b.classList.toggle('expanded');const c=b.classList.contains('expanded'),d=Array.from(this.childNodes).find(a=>a.nodeType===Node.TEXT_NODE);d&&(d.textContent=c?'[less]':'[more]'),c?sessionStorage.setItem('navExpanded','true'):sessionStorage.removeItem('navExpanded')})});document.querySelectorAll('footer .expand-toggle').forEach(a=>{a.addEventListener('click',function(){const b=this.closest('footer');b.classList.toggle('expanded');const c=b.classList.contains('expanded'),d=Array.from(this.childNodes).find(a=>a.nodeType===Node.TEXT_NODE);d&&(d.textContent=c?'[less]':'[more]'),c?sessionStorage.setItem('footerExpanded','true'):sessionStorage.removeItem('footerExpanded')})});if('true'===sessionStorage.getItem('navExpanded')){const a=document.querySelector('#main-nav');if(a){a.classList.add('expanded');const b=a.querySelector('.expand-toggle');if(b){const a=Array.from(b.childNodes).find(a=>a.nodeType===Node.TEXT_NODE);a&&(a.textContent='[less]')}}}if('true'===sessionStorage.getItem('footerExpanded')){const a=document.querySelector('#main-footer');if(a){a.classList.add('expanded');const b=a.querySelector('.expand-toggle');if(b){const a=Array.from(b.childNodes).find(a=>a.nodeType===Node.TEXT_NODE);a&&(a.textContent='[less]')}}}});
-  </script>
+  </script>-->
 
   <!--Handles the theme toggle button (dark/light mode)-->
   <script defer>
-    (function(){const g=()=>{const s=localStorage.getItem('theme');return s?s:window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'},s=t=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);u(t)},u=c=>{const b=document.querySelector('.theme-toggle');b&&(b.textContent=c==='light'?'[dark]':'[light]')};s(g());u(g());document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.theme-toggle').forEach(t=>t.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme');s(c==='light'?'dark':'light')}))})})();
+    (function(){const g=()=>{const s=localStorage.getItem('theme');return s?s:window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'},s=t=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);u(t)},u=c=>{const b=document.querySelector('.theme-toggle');b&&(b.textContent=c==='light'?'[Dark]':'[Light]')};s(g());u(g());document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.theme-toggle').forEach(t=>t.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme');s(c==='light'?'dark':'light')}))})})();
   </script>
 </head>

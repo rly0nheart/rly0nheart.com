@@ -1,25 +1,19 @@
 {{- $icons := partial "icons.html" -}}
-
 <footer id="main-footer">
-  <hr />
+<hr />
   {{ if .Site.Params.social }}
-  <p id="social">
+<p id="social">
     Find me around the web:
-    <br />
+<br />
     {{ range $i, $e := .Site.Params.social }}
-      {{ if le $i 1 }}
-        {{if $i}} | {{end}} <a href="{{ .url }}" target="_blank">{{- index $icons .name | safeHTML -}}{{- .name -}}</a>
-      {{ else }}
-        <span class="social-extra"> | <a href="{{ .url }}" target="_blank">{{- index $icons .name | safeHTML -}}{{- .name -}}</a></span>
-      {{ end }}
+      {{if $i}} | {{end}} <a href="{{ .url }}" target="_blank">{{- index $icons .name | safeHTML -}}{{- .name -}}</a>
     {{ end }}
-    <button class="expand-toggle" aria-label="Toggle more social links">[more]</button><button class="theme-toggle" aria-label="Toggle dark/light mode">[theme]</button>
-  </p>
+</p>
   {{ end }}
-  <p class="copyright">
+<p class="copyright">
     Copyright © {{ now.Format "2006"}}
-    <a href="{{ .Site.BaseURL }}"><strong>{{ default "Blog Author" .Site.Params.Author }}</strong></a>.
+<a href="{{ .Site.BaseURL }}"><strong>{{ default "Blog Author" .Site.Params.Author }}</strong></a>.
     This work is licensed under the
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
-  </p>
+<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+</p>
 </footer>

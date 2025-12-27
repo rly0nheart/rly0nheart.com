@@ -51,21 +51,21 @@ theme = 'smigle'
     weight = 3
 
   [[menu.main]]
-    name = "RSS"
-    url = "/index.xml"
-    weight = 4
-
-  [[menu.main]]
     name = "Projects"
     url = "/projects/"
-    weight = 5
-
+    weight = 4
+    
   [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 6
+    name = "RSS"
+    url = "/index.xml/"
+    weight = 5
 
   [[menu.main]]
     name = "Tags"
     url = "/tags/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
     weight = 7

@@ -101,7 +101,7 @@ footer .social-extra {
 }
 
 /* Toggle button styling */
-.expand-toggle, .theme-toggle {
+.expand-toggle, .theme-toggle, .subscribe-button {
   background: none;
   border: none;
   color: var(--fontcolor);
@@ -113,7 +113,7 @@ footer .social-extra {
   text-decoration: none;
 }
 
-.theme-toggle:hover, .expand-toggle:hover {
+.theme-toggle:hover, .expand-toggle:hover, .subscribe-button:hover {
   filter: brightness(1.5);
   transition: all 0.1s ease-in-out;
 }
@@ -136,5 +136,59 @@ footer.expanded .social-extra {
   
   .expand-toggle {
     display: none;
+  }
+}
+
+
+
+
+/* Add to smigle.css */
+
+/* Header positioning */
+header {
+  position: relative;
+  padding-top: 40px; /* Make room for buttons */
+}
+
+/* Buttons in top-right corner */
+.header-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+.header-button {
+  background: none;
+  border: none;
+  color: var(--fontcolor);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.header-button:hover {
+  filter: brightness(1.5) !important;
+  text-decoration: underline !important;
+  transition: all 0.1s ease-in-out !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  header {
+    padding-top: 35px;
+  }
+  
+  .header-buttons {
+    top: 5px;
+    right: 5px;
+  }
+  
+  .header-button {
+    font-size: 14px;
+    margin-left: 5px;
   }
 }

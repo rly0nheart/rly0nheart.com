@@ -1,34 +1,41 @@
 {{- $icons := partial "icons.html" -}}
-
 <header>
-  <div id="brand">
-    <!--<a class="icon-link" href="{{ .Site.BaseURL }}">-->
-      <img
-        class="icon"
-        src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
-      />
-    <!--</a>-->
-    <div class="text">
-      <!--<a href="{{ .Site.BaseURL }}">--><h1>{{ .Site.Title }}</h1><!--</a>-->
-      <h3>{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
-    </div>
-  </div>
-  <nav id="main-nav">
+<!-- Buttons in top-right corner -->
+<div class="header-buttons">
+  <button id="subscribe-button" class="header-button" aria-label="Subscribe to get new posts">[Newsletter]</button>
+  <button class="theme-toggle header-button" aria-label="Toggle theme">[Theme]</button>
+</div>
+
+<div id="brand">
+<img
+class="icon"
+src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
+/>
+<div class="text">
+<h1>{{ .Site.Title }}</h1>
+<h3>{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
+</div>
+</div>
+<nav id="main-nav">
     {{ with .Site.Menus.main }}
       {{ range $index, $value := . }}
-        {{ if le $index 3 }}
-          {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a>
-        {{ else }}
-          <span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a></span>
-        {{ end }}
+        {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a>
       {{ end }}
-      <button class="expand-toggle" aria-label="Toggle more navigation items">[more]</button>
     {{ end }}
-</p>
-  </nav>
-  <hr/>
-  <!--Higlight current tab-->
-  <script>
+</nav>
+<hr/>
+<script>
     (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='filter:brightness(1.5)!important;text-decoration:underline;pointer-events:none'})})();
-  </script>
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const button = document.getElementById('subscribe-button');
+        const popup = document.getElementById('subscribe-popup');
+        if (button && popup) {
+            button.addEventListener('click', function() {
+                popup.classList.add('active');
+            });
+        }
+    });
+</script>
 </header>
