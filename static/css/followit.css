@@ -1,0 +1,162 @@
+/* Popup overlay */
+#subscribe-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+#subscribe-popup.active {
+  display: flex;
+}
+
+/* Popup container */
+.popup-content {
+  background: var(--bgcolor);
+  border: 2px solid var(--dimcolor);
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  font-family: Iosevka, monospace;
+}
+
+/* Close button */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: var(--fontcolor);
+  font-family: Iosevka, monospace;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.popup-close:hover {
+  filter: brightness(1.5) !important;
+  text-decoration: underline !important;
+  transition: all 0.1s ease-in-out !important;
+}
+
+/* Override ALL Follow.it styles */
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview * {
+  box-sizing: border-box !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
+  width: 100% !important;
+  margin-bottom: 10px !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5 {
+  margin: 0 !important;
+  font-family: Iosevka, monospace !important;
+  font-weight: normal !important;
+  color: var(--fontcolor) !important;
+  font-size: 16px !important;
+  text-align: left !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
+  margin-top: 10px !important;
+  width: 100% !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
+  width: 100% !important;
+  height: 40px !important;
+  border-radius: 0 !important;
+  border: 1px solid var(--dimcolor) !important;
+  background-color: var(--bgcolor) !important;
+  color: var(--fontcolor) !important;
+  outline: none !important;
+  font-family: Iosevka, monospace !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  padding: 0 10px !important;
+  text-align: left !important;
+  background-image: none !important;
+  line-height: normal !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
+  color: var(--visitedcolor) !important;
+  opacity: 1 !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:focus {
+  border-color: var(--linkcolor) !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
+  margin-top: 10px !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
+  width: auto !important;
+  height: auto !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--fontcolor) !important;
+  font-family: Iosevka, monospace !important;
+  font-size: 16px !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  line-height: normal !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
+  filter: brightness(1.5) !important;
+  text-decoration: underline !important;
+  transition: all 0.1s ease-in-out !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line {
+  color: var(--visitedcolor) !important;
+  font-family: Iosevka, monospace !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  line-height: 1.5 !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  display: flex !important;
+  width: 100% !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  margin-top: 15px !important;
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
+  margin-left: 5px !important;
+  height: 1em !important;
+  max-height: 1em !important;
+}
