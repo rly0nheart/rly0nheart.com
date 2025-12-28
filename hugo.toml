@@ -41,30 +41,30 @@ theme = 'smigle'
   [[menu.main]]
     name = "About"
     pre = '<i class="fa-solid fa-user"></i>'
-    url = "/about/"
+    url = "/about"
     weight = 2
   [[menu.main]]
     name = "Posts"
     pre = '<i class="fa-solid fa-book"></i>'
-    url = "/posts/"
+    url = "/posts"
     weight = 3
   [[menu.main]]
     name = "RSS"
     pre = '<i class="fa-solid fa-rss"></i>'
-    url = "/index.xml/"
+    url = "/index.xml"
     weight = 4
   [[menu.main]]
     name = "Projects"
     pre = '<i class="fa-solid fa-code"></i>'
-    url = "/projects/"
+    url = "/projects"
     weight = 5
   [[menu.main]]
     name = "Tags"
     pre = '<i class="fa-solid fa-tags"></i>'
-    url = "/tags/"
+    url = "/tags"
     weight = 6
   [[menu.main]]
     name = "Categories"
     pre = '<i class="fa-solid fa-layer-group"></i>'
-    url = "/categories/"
+    url = "/categories"
     weight = 7

@@ -7,7 +7,7 @@ layout: default
 
 * `public` [**searchcode-python**](https://codeberg.org/rly0nheart/searchcode-python): *Python SDK and CLI utility for searchcode.com.*
 
-* `public` [**octosuite**](https://github.com/bellingcat/octosuite): *GitHub Data Analysis Framework*
+* `public` [**octosuite**](https://github.com/bellingcat/octosuite): *TUI-based toolkit for GitHub-data analaysis*
 
 * `public` [**oxdork**](https://codeberg.org/rly0nheart/oxdork): *Google dorking tool*
 
