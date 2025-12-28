@@ -181,6 +181,9 @@ header {
 
 /* Mobile adjustments */
 @media (max-width: 767px) {
+  #main-nav {
+    text-align: center;
+  }
   header {
     padding-top: 35px;
   }
