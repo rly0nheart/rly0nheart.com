@@ -1,3 +1,7 @@
+/* ============================================
+   ROOT CONTAINER
+   ============================================ */
+/* Main content container with centered layout */
 #root {
   font-family: Iosevka, monospace;
   max-width: 750px;
@@ -5,84 +9,146 @@
   padding: 10px;
   transition: all 0.1s ease-in-out;
 }
+
+/* ============================================
+   BRAND SECTION
+   ============================================ */
+/* Brand container with logo and text */
 #brand {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
+/* Brand links styling */
 #brand a {
   color: var(--fontcolor);
   text-decoration: none;
 }
+
+/* Brand headings reset */
 #brand h1,
 #brand h3 {
   margin: 0;
 }
+
+/* Main brand title */
 #brand h1 {
   font-size: 30px;
 }
+
+/* Brand subtitle/tagline */
 #brand h3 {
   font-size: 15px;
   color: var(--visitedcolor);
   font-weight: normal;
 }
+
+/* Brand icon/logo size */
 #brand .icon {
   width: 75px;
 }
+
+/* ============================================
+   HEADER & FOOTER
+   ============================================ */
+/* Footer spacing */
 footer {
   margin-top: 30px;
 }
+
+/* Header navigation spacing */
 header nav {
   margin: 15px 0;
 }
+
+/* ============================================
+   POST TITLES & METADATA
+   ============================================ */
+/* Post title styling */
 h1.title {
   margin: 1.3rem 0 0 0;
   display: inline-flex;
 }
+
+/* Post title hover effect */
 a:hover h1.title {
   text-decoration: underline;
 }
+
+/* Post subtitle styling */
 h3.subtitle {
   font-weight: normal;
   margin: 0;
 }
+
+/* Post metadata section */
 div.post-meta {
   margin-top: 1.3rem;
 }
+
+/* ============================================
+   RESPONSIVE: TABLET & DESKTOP
+   ============================================ */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  /* Add top margin to root container */
   #root {
     margin-top: 25px;
   }
+
+  /* Brand layout changes to horizontal */
   #brand {
     flex-direction: row;
     text-align: unset;
   }
+
+  /* Brand text spacing */
   #brand .text {
     margin-left: 10px;
   }
+
+  /* Larger brand title on desktop */
   #brand h1 {
     font-size: 45px;
   }
+
+  /* Larger brand subtitle on desktop */
   #brand h3 {
     font-size: 18px;
     color: var(--visitedcolor);
   }
 }
+
+/* ============================================
+   POSTS LIST
+   ============================================ */
+/* Posts list by date */
 #postsByDate {
   list-style: none;
 }
+
+/* Date column width in posts list */
 #postsByDate .date {
   width: 60px;
 }
+
+/* Inline display for post list items */
 #postsByDate div,
 #postsInOneGroup div {
   display: inline-block;
 }
+
+/* ============================================
+   TERMS/TAGS
+   ============================================ */
+/* Terms list container */
 #terms {
   list-style: none;
 }
+
+/* Individual term/tag styling */
 #terms .term {
   background-color: #504945;
   border-radius: 10px;
@@ -91,16 +157,20 @@ div.post-meta {
   padding: 8px;
 }
 
-/* Mobile-first: hide extra items by default */
+/* ============================================
+   NAVIGATION EXPANSION
+   ============================================ */
+/* Mobile-first: hide extra navigation items by default */
 header nav .nav-extra {
   display: none;
 }
 
+/* Mobile-first: hide extra social links by default */
 footer .social-extra {
   display: none;
 }
 
-/* Toggle button styling */
+/* Expand/collapse toggle button */
 .expand-toggle {
   background: none;
   border: none;
@@ -114,13 +184,13 @@ footer .social-extra {
   text-decoration: none;
 }
 
+/* Expand toggle hover effect */
 .expand-toggle:hover {
   filter: brightness(1.5);
   transition: all 0.1s ease-in-out;
-  text-decoration: underline;
 }
 
-/* When expanded, show extra items */
+/* Show extra items when expanded */
 header nav.expanded .nav-extra {
   display: inline;
 }
@@ -129,37 +199,38 @@ footer.expanded .social-extra {
   display: inline;
 }
 
-/* On tablets and up, always show all items */
+/* On tablets and up, always show all items and hide toggle */
 @media (min-width: 768px) {
   header nav .nav-extra,
   footer .social-extra {
     display: inline;
   }
-  
+
   .expand-toggle {
     display: none;
   }
 }
 
-
-
-
-/* Add to smigle.css */
-
-/* Header positioning */
+/* ============================================
+   HEADER BUTTONS (THEME TOGGLE, SUBSCRIBE)
+   ============================================ */
+/* Header positioning for absolute buttons */
 header {
   position: relative;
   padding-top: 40px; /* Make room for buttons */
 }
 
-/* Buttons in top-right corner */
+/* Container for header buttons */
 .header-buttons {
   position: absolute;
   top: 10px;
-  right: 10px;
+  width: 100%;
   z-index: 100;
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right by default */
 }
 
+/* General header button styling */
 .header-button {
   background: none;
   border: none;
@@ -169,32 +240,79 @@ header {
   font-size: inherit;
   font-weight: bold;
   padding: 0;
-  margin-left: 10px;
   text-decoration: none;
 }
 
+/* Header button hover effect */
 .header-button:hover {
   filter: brightness(1.5) !important;
   text-decoration: underline !important;
   transition: all 0.1s ease-in-out !important;
 }
 
-/* Mobile adjustments */
+/* Theme toggle button visibility control */
+/* Hidden by default to prevent icon flash */
+.theme-toggle {
+  opacity: 0;
+}
+
+/* Visible once correct icon is loaded */
+.theme-toggle.loaded {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* ============================================
+   RESPONSIVE: MOBILE ADJUSTMENTS
+   ============================================ */
 @media (max-width: 767px) {
+  /* Center navigation on mobile */
   #main-nav {
     text-align: center;
   }
+
+  /* Reduce header padding on mobile */
   header {
     padding-top: 35px;
   }
-  
+
+  /* Mobile: Spread buttons to opposite sides */
   .header-buttons {
     top: 5px;
-    right: 5px;
+    width: 100%;
+    justify-content: space-between; /* One left, one right */
   }
-  
+
+  /* Smaller button font on mobile */
   .header-button {
     font-size: 14px;
-    margin-left: 5px;
   }
+}
+
+/* ============================================
+   RESPONSIVE: DESKTOP ADJUSTMENTS
+   ============================================ */
+@media (min-width: 768px) {
+  /* Desktop: Align both buttons to the right */
+  .header-buttons {
+    justify-content: flex-end;
+  }
+
+  /* Add spacing between buttons on desktop */
+  .header-button {
+    margin-left: 10px;
+  }
+}
+
+/* ============================================
+   BUTTON SPACING ADJUSTMENTS
+   ============================================ */
+/* Left button spacing (mainly for mobile) */
+.header-button:first-child {
+  margin-left: 10px;
+}
+
+/* Right button spacing (mainly for mobile) */
+.header-button:last-child {
+  margin-right: 10px;
 }

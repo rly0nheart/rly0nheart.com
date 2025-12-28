@@ -2,10 +2,9 @@
 <header>
 <!-- Buttons in top-right corner -->
 <div class="header-buttons">
-  <button id="subscribe-button" class="header-button" aria-label="Subscribe to get new posts">[Newsletter]</button>
-  <button class="theme-toggle header-button" aria-label="Toggle theme">[Theme]</button>
+<button class="theme-toggle header-button" aria-label="Toggle theme">{{- index $icons "Sun" | safeHTML -}}</button>
+<button id="subscribe-button" class="header-button" aria-label="Subscribe to get new posts">{{- index $icons "Newspaper" | safeHTML -}}</button>
 </div>
-
 <div id="brand">
 <img
 class="icon"
@@ -16,30 +15,30 @@ src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
 <h3>{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
 </div>
 </div>
-  <nav id="main-nav">
+<nav id="main-nav">
     {{ with .Site.Menus.main }}
       {{ range $index, $value := . }}
         {{ if le $index 3 }}
           {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a>
         {{ else }}
-          <span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a></span>
+<span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a></span>
         {{ end }}
       {{ end }}
-      <button class="expand-toggle" aria-label="Toggle more navigation items">🠷</button>
+<button class="expand-toggle" aria-label="Toggle more navigation items">▼</button>
     {{ end }}
 </p>
-  </nav>
+</nav>
 <hr/>
 <script>
     (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='filter:brightness(1.5)!important;text-decoration:underline;pointer-events:none'})})();
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const button = document.getElementById('subscribe-button');
-        const popup = document.getElementById('subscribe-popup');
-        if (button && popup) {
-            button.addEventListener('click', function() {
-                popup.classList.add('active');
+document.addEventListener('DOMContentLoaded', function() {
+const button = document.getElementById('subscribe-button');
+const popup = document.getElementById('subscribe-popup');
+if (button && popup) {
+button.addEventListener('click', function() {
+popup.classList.add('active');
             });
         }
     });

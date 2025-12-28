@@ -1,4 +1,8 @@
-/* Popup overlay */
+/* ============================================
+   SUBSCRIBE POPUP - OVERLAY & CONTAINER
+   ============================================ */
+
+/* Popup overlay - full screen dark background */
 #subscribe-popup {
   display: none;
   position: fixed;
@@ -12,11 +16,12 @@
   align-items: center;
 }
 
+/* Show popup when active class is added */
 #subscribe-popup.active {
   display: flex;
 }
 
-/* Popup container */
+/* Popup content container */
 .popup-content {
   background: var(--bgcolor);
   border: 2px solid var(--dimcolor);
@@ -27,7 +32,11 @@
   font-family: Iosevka, monospace;
 }
 
-/* Close button */
+/* ============================================
+   POPUP CLOSE BUTTON
+   ============================================ */
+
+/* Close button in top-right corner */
 .popup-close {
   position: absolute;
   top: 10px;
@@ -43,13 +52,18 @@
   line-height: 1;
 }
 
+/* Close button hover effect */
 .popup-close:hover {
   filter: brightness(1.5) !important;
-  text-decoration: underline !important;
   transition: all 0.1s ease-in-out !important;
 }
 
-/* Override ALL Follow.it styles */
+/* ============================================
+   FOLLOW.IT FORM OVERRIDES
+   High specificity selectors to override third-party styles
+   ============================================ */
+
+/* Main form container layout */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview {
   display: flex !important;
   flex-direction: column !important;
@@ -63,16 +77,23 @@
   border: none !important;
 }
 
+/* Ensure consistent box-sizing for all form elements */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview * {
   box-sizing: border-box !important;
 }
 
+/* ============================================
+   FORM HEADING
+   ============================================ */
+
+/* Form heading container */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
   width: 100% !important;
   margin-bottom: 10px !important;
 }
 
+/* Form heading text styling */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5 {
   margin: 0 !important;
   font-family: Iosevka, monospace !important;
@@ -82,11 +103,17 @@
   text-align: left !important;
 }
 
+/* ============================================
+   FORM INPUT FIELD
+   ============================================ */
+
+/* Input field container */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
   margin-top: 10px !important;
   width: 100% !important;
 }
 
+/* Email input field styling */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
   width: 100% !important;
   height: 40px !important;
@@ -104,21 +131,29 @@
   line-height: normal !important;
 }
 
+/* Input placeholder text styling */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
   color: var(--visitedcolor) !important;
   opacity: 1 !important;
 }
 
+/* Input field focus state */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:focus {
   border-color: var(--linkcolor) !important;
 }
 
+/* ============================================
+   FORM SUBMIT BUTTON
+   ============================================ */
+
+/* Submit button container */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
   margin-top: 10px !important;
   width: 100% !important;
   text-align: center !important;
 }
 
+/* Submit button styling */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
   width: auto !important;
   height: auto !important;
@@ -135,12 +170,18 @@
   line-height: normal !important;
 }
 
+/* Submit button hover effect */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
   filter: brightness(1.5) !important;
   text-decoration: underline !important;
   transition: all 0.1s ease-in-out !important;
 }
 
+/* ============================================
+   POWERED BY ATTRIBUTION
+   ============================================ */
+
+/* "Powered by Follow.it" text and logo */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line {
   color: var(--visitedcolor) !important;
   font-family: Iosevka, monospace !important;
@@ -156,6 +197,7 @@
   margin-top: 15px !important;
 }
 
+/* Follow.it logo in powered-by line */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
   margin-left: 5px !important;
   height: 1em !important;
