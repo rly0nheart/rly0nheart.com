@@ -3,7 +3,7 @@ title: About
 layout: default
 ---
 
-## Hi, I'm Ritchie Mwewa
+## Hi, I'm Ritchie
 
 I'm a Software Engineer from [**Zambia**](https://en.wikipedia.org/wiki/Zambia), with 5 years of experience, making and trying to break software. I play guitar, I'm both a mentor and mentee, and I know how to do a backflip :). 
 
