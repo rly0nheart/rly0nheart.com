@@ -1,9 +1,8 @@
-{{- $icons := partial "icons.html" -}}
 <header>
 <!-- Buttons in top-right corner -->
 <div class="header-buttons">
-<button class="theme-toggle header-button" aria-label="Toggle theme">{{- index $icons "Sun" | safeHTML -}}</button>
-<button id="subscribe-button" class="header-button" aria-label="Subscribe to get new posts">{{- index $icons "Newspaper" | safeHTML -}}</button>
+<button class="theme-toggle header-button" aria-label="Toggle theme"></button>
+<button id="subscribe-button" class="header-button" aria-label="Subscribe to get new posts"><i class="fa-solid fa-newspaper"></i></button>
 </div>
 <div id="brand">
 <img
@@ -19,14 +18,13 @@ src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
     {{ with .Site.Menus.main }}
       {{ range $index, $value := . }}
         {{ if le $index 3 }}
-          {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a>
+          {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{ with .Pre }}{{ . | safeHTML }}{{ end }}{{- .Name -}}</b></a>
         {{ else }}
-<span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a></span>
+<span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{ with .Pre }}{{ . | safeHTML }}{{ end }}{{- .Name -}}</b></a></span>
         {{ end }}
       {{ end }}
 <button class="expand-toggle" aria-label="Toggle more navigation items">▼</button>
     {{ end }}
-</p>
 </nav>
 <hr/>
 <script>
