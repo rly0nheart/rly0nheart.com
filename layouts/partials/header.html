@@ -16,13 +16,19 @@ src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
 <h3>{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
 </div>
 </div>
-<nav id="main-nav">
+  <nav id="main-nav">
     {{ with .Site.Menus.main }}
       {{ range $index, $value := . }}
-        {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a>
+        {{ if le $index 3 }}
+          {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a>
+        {{ else }}
+          <span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{- index $icons .Name | safeHTML -}}{{- .Name -}}</b></a></span>
+        {{ end }}
       {{ end }}
+      <button class="expand-toggle" aria-label="Toggle more navigation items">..See more</button>
     {{ end }}
-</nav>
+</p>
+  </nav>
 <hr/>
 <script>
     (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='filter:brightness(1.5)!important;text-decoration:underline;pointer-events:none'})})();

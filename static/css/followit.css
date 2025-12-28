@@ -36,7 +36,8 @@
   border: none;
   color: var(--fontcolor);
   font-family: Iosevka, monospace;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
   padding: 0;
   line-height: 1;
@@ -127,7 +128,7 @@
   color: var(--fontcolor) !important;
   font-family: Iosevka, monospace !important;
   font-size: 16px !important;
-  font-weight: normal !important;
+  font-weight: bold !important;
   padding: 0 !important;
   cursor: pointer !important;
   text-align: left !important;

@@ -51,13 +51,13 @@ theme = 'smigle'
     weight = 3
 
   [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 4
-    
-  [[menu.main]]
     name = "RSS"
     url = "/index.xml/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
     weight = 5
 
   [[menu.main]]

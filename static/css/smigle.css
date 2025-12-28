@@ -101,21 +101,23 @@ footer .social-extra {
 }
 
 /* Toggle button styling */
-.expand-toggle, .theme-toggle, .subscribe-button {
+.expand-toggle {
   background: none;
   border: none;
   color: var(--fontcolor);
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
+  font-weight: bold;
   padding: 0;
   margin: 0 5px;
   text-decoration: none;
 }
 
-.theme-toggle:hover, .expand-toggle:hover, .subscribe-button:hover {
+.expand-toggle:hover {
   filter: brightness(1.5);
   transition: all 0.1s ease-in-out;
+  text-decoration: underline;
 }
 
 /* When expanded, show extra items */
@@ -165,6 +167,7 @@ header {
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
+  font-weight: bold;
   padding: 0;
   margin-left: 10px;
   text-decoration: none;

@@ -2,13 +2,18 @@
 <footer id="main-footer">
 <hr />
   {{ if .Site.Params.social }}
-<p id="social">
+  <p id="social">
     Find me around the web:
-<br />
+    <br />
     {{ range $i, $e := .Site.Params.social }}
-      {{if $i}} | {{end}} <a href="{{ .url }}" target="_blank">{{- index $icons .name | safeHTML -}}{{- .name -}}</a>
+      {{ if le $i 2 }}
+        {{if $i}} | {{end}} <a href="{{ .url }}" target="_blank">{{- index $icons .name | safeHTML -}}{{- .name -}}</a>
+      {{ else }}
+        <span class="social-extra"> | <a href="{{ .url }}" target="_blank">{{- index $icons .name | safeHTML -}}{{- .name -}}</a></span>
+      {{ end }}
     {{ end }}
-</p>
+    <button class="expand-toggle" aria-label="Toggle more social links">..See more</button>
+  </p>
   {{ end }}
 <p class="copyright">
     Copyright © {{ now.Format "2006"}}
