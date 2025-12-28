@@ -104,7 +104,7 @@ footer .social-extra {
 .expand-toggle {
   background: none;
   border: none;
-  color: var(--fontcolor);
+  color: var(--linkcolor);
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
