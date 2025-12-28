@@ -237,7 +237,7 @@ header {
   color: var(--fontcolor);
   cursor: pointer;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 18px;
   font-weight: bold;
   padding: 0;
   text-decoration: none;
@@ -280,11 +280,6 @@ header {
     top: 5px;
     width: 100%;
     justify-content: space-between; /* One left, one right */
-  }
-
-  /* Smaller button font on mobile */
-  .header-button {
-    font-size: 14px;
   }
 }
 
