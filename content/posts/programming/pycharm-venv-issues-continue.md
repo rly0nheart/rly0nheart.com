@@ -15,12 +15,12 @@ About 3 days ago, I published a post about [**Fixing PyCharm's Missing Imports a
 ## The Problem
 
 I was experiencing a strange issue where:
-- **Everything seemed to be working** - I could install packages, linting was functional, and scripts ran fine
-- **But Black formatter refused to work** - it would fail with an error when trying to format code
-- PyCharm showed the interpreter name in the bottom right, but **clicking it showed nothing** - as if no interpreter was configured
+- **Everything seemed to be working**. I could install packages, linting was functional, and scripts ran fine
+- **But Black formatter refused to work**. It would fail with an error when trying to format code
+- PyCharm showed the interpreter name in the bottom right, but **clicking it showed nothing**, as if no interpreter was configured
 - In the interpreter settings, my project's venv was marked as **`[invalid]`**, but PyCharm was actually using a different venv from my home directory instead
 - PyCharm insisted on using Python 3.14 from the host system, even though my toolbox only had Python 3.13
-- Creating new project venvs didn't help - PyCharm kept ignoring them in favor of the global one
+- Creating new project venvs didn't help: PyCharm kept ignoring them in favor of the global one
 
 The frustrating part was that things *appeared* to work because PyCharm was silently falling back to the wrong venv, making it hard to pinpoint what was actually wrong.
 
@@ -102,11 +102,11 @@ After removing the global venv:
 
 ## Lessons Learned
 
-1. **Don't create global venvs in your home directory (`~/.venv`)** - They'll probably interfere with project-specific venvs and confuse tools like PyCharm and uv. Always create venvs inside your project directories (like `~/project/.venv`).
+1. **Don't create global venvs in your home directory (`~/.venv`)**: They'll probably interfere with project-specific venvs and confuse tools like PyCharm and uv. Always create venvs inside your project directories (like `~/project/.venv`).
 
-2. **Venvs can "change versions" when system Python upgrades** - If your venv's Python is symlinked to the system Python (like `/usr/bin/python`), and the system upgrades Python, your venv will suddenly point to a different Python version without you realising it. This is especially problematic on systems where the host and containers (like Fedora Toolbox) have different Python versions.
+2. **Venvs can "change versions" when system Python upgrades**: If your venv's Python is symlinked to the system Python (like `/usr/bin/python`), and the system upgrades Python, your venv will suddenly point to a different Python version without you realising it. This is especially problematic on systems where the host and containers (like Fedora Toolbox) have different Python versions.
 
-3. **On immutable systems like Silverblue, venv path resolution can be tricky** A venv in your home directory can reference the host system Python, which may cause issues when working in a toolbox with a different Python version. The exact mechanism of how this causes problems isn't entirely clear to me, but removing the global venv resolved all my issues.
+3. **On immutable systems like Silverblue, venv path resolution can be tricky**: A venv in your home directory can reference the host system Python, which may cause issues when working in a toolbox with a different Python version. The exact mechanism of how this causes problems isn't entirely clear to me, but removing the global venv resolved all my issues.
 
 ## In Conclusion
 If you're experiencing strange venv issues:
@@ -116,4 +116,4 @@ If you're experiencing strange venv issues:
    - Settings → Tools → Python Integrated Tools
    - Package installer: Change from "uv" to "pip"
 
-This might be a recurring issue when working with containerised environments like Fedora Toolbox - venv path and version management requires extra attention. The combination of host/toolbox separation and venv symlinks to system Python can create opportunities for confusion. Always double-check your venv configurations and where they're actually pointing!
+This might be a recurring issue when working with containerised environments like Fedora Toolbox, venv path and version management requires extra attention. The combination of host/toolbox separation and venv symlinks to system Python can create opportunities for confusion. Always double-check your venv configurations and where they're actually pointing!
