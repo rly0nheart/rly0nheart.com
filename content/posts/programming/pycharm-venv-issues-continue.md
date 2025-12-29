@@ -20,7 +20,7 @@ I was experiencing a strange issue where:
 - PyCharm showed the interpreter name in the bottom right, but **clicking it showed nothing**, as if no interpreter was configured
 - In the interpreter settings, my project's venv was marked as **`[invalid]`**, but PyCharm was actually using a different venv from my home directory instead
 - PyCharm insisted on using Python 3.14 from the host system, even though my toolbox only had Python 3.13
-- Creating new project venvs didn't help: PyCharm kept ignoring them in favor of the global one
+- Creating new project venvs didn't help. PyCharm kept ignoring them in favour of the global one
 
 The frustrating part was that things *appeared* to work because PyCharm was silently falling back to the wrong venv, making it hard to pinpoint what was actually wrong.
 
