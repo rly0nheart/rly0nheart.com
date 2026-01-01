@@ -190,6 +190,23 @@ footer .social-extra {
   transition: all 0.1s ease-in-out;
 }
 
+.theme-toggle {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle.spin {
+  animation: spin 0.5s ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Show extra items when expanded */
 header nav.expanded .nav-extra {
   display: inline;

@@ -31,7 +31,7 @@ I had to quit working at the construction company, as they started delaying paym
 
 ## Building Tools and Finding My Community
 
-**2020 - 2021**, I was on Facebook then, so I had joined as many groups about programming as I could. That's how I made friends with [**Stephen Cafferty**](https://github.com/caff1982). Stephen helped me a lot throughout my Python journey. He helped me debug my code, showed me some Python tricks, and would eventually help me write a draft application and CV for my first job as a Software Developer for Bellingcat.
+**2020 - 2021**, I was on Facebook then, so I had joined as many groups about programming as I could. That's how I made friends with [**Stephen Cafferty**](https://github.com/caff1982). Stephen helped me a lot throughout my Python journey. He helped me debug my code, showed me some Python tricks[^4], and would eventually help me write a draft application and CV for my first job as a Software Developer for Bellingcat. 
 
 In order to code properly, I needed internet, so I would save up K5 (the equivalent of $0.22) to buy 750MB worth of internet data which would expire after 7 days, and if I used it up before the 7 days, I would have to buy the same bundle again. 
 
@@ -111,10 +111,12 @@ I just wish more companies would look at what someone can actually do instead of
 
 [^3]: If you're from where I come from, this was decent money, and most importanly, "better than nothing"
 
-[^4]: The name varies depending on which part of Africa you're in and in what language you're saying it.
+[^4] My very first project and GitHub repo was [**riddler_program**](https://github.com/rly0nheart/riddler_program/tree/f3db4acdea6ffa0777d64b4412d319565ac08849), and [**this here**](https://github.com/rly0nheart/riddler_program/tree/main) is the same code after getting help from Stephen. I started writing code for the riddler_program in late 2019.
 
-[^5]: Octosuite is currently the most starred repository on Bellingcat's GitHub org, with 1.9k stars and over 150 forks.
+[^5]: The name varies depending on which part of Africa you're in and in what language you're saying it.
 
-[^6]: So I would get 2 months worth of payment, plus €800 for a laptop, totalling to €2,800.
+[^6]: Octosuite is currently the most starred repository on Bellingcat's GitHub org, with 1.9k stars and over 150 forks.
 
-[^7]: Fun fact, I learned about automatically pushing packages to PyPI through workflows from someone at Bellingcat. Before that, I would manually build my packages with pip and publish them with twine.
+[^7]: So I would get 2 months worth of payment, plus €800 for a laptop, totalling to €2,800.
+
+[^8]: Fun fact, I learned about automatically pushing packages to PyPI through workflows from someone at Bellingcat. Before that, I would manually build my packages with pip and publish them with twine.
