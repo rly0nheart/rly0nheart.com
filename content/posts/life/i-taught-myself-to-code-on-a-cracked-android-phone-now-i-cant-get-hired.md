@@ -12,7 +12,8 @@ Truth be told, I come across a fair number of people who ask me how I learned to
 ## How Did I Get Here?
 
 **2016**, I dropped out of school after writing my grade 9 exams because my mum couldn't afford to pay for my school fees[^1].
-I always liked books, and after dropping out of school, I started going to the library everyday (unlike when I was in school, going every Friday), reading novels, science books, you name it. [**The library**](https://www.google.com/maps/place/Fountain+of+Hope/-15.4313094,28.2873744), which was part of an orphanage and a community school, felt like a  50 minute walk from where [**I lived**](https://google.com/maps/place/@-15.450211504436188,28.284824244249144)[^2]. At 15 years of age and with nothing else to do, I didnt mind walking that distance. I read anything that would catch my attention. This was particularly enjoyable because it felt like I was in complete control of what I wanted to learn. I was never very confident in my ability to speak English during my school days, but reading books gave me the confidence. Whatever English I knew then, was significantly improved by reading books.
+I always liked books, and after dropping out of school, I started going to the library everyday (unlike when I was in school, going every Friday), reading novels, science books, you name it. [**The library**](https://www.google.com/maps/place/Fountain+of+Hope/-15.4313094,28.2873744), felt like a  50 minute walk from where [**I lived**](https://google.com/maps/place/@-15.450211504436188,28.284824244249144)[^2]. At 15 years of age and with nothing else to do, I didnt mind walking that distance. 
+I read anything that would catch my attention. This was particularly enjoyable because it felt like I was in complete control of what I wanted to learn. I was never very confident in my ability to speak English during my school days, but reading books gave me the confidence. Whatever English I knew then, was significantly improved by reading books.
 
 ## The Construction Job and Getting a Smartphone to Code On
 
@@ -87,14 +88,19 @@ When I look back at the past five years, I sometimes think I was just lucky. My 
 
 ## The Reality of Job Hunting Without Formal Education
 
-Now, you would think that with my experience, and determination, and the fact that I'm self-taught with proof of my work, it would be at least less of a hustle to land a position as a Software Developer/Engineer (especially for conpanies that "value skills"). But it hasn't been. My lack of formal education (or maybe location?) seems to always be my disqualifying trait. I've seen a company drop me from a position that I was 100% a good fit for. I had every technical requirement they were looking for apart from the Bachelor's Degree, but they instead went for someone who was less technically qualified than me. They just had an education from a known college and a Bachelor's degree. One company even had me do free work for them as a "take-home assignment" and then, after a week and half of solving the problem, I submitted my work, but they went dark. They never got back to me (even a rejection email would have been nice). Experiencing this, repeatedly, makes you lose confidence in your ability to do things that you know deep down you're capable of. Ned once told me that I should be proud of what I have achieved. I try to be, but it's hard to see the work I've done when I'm missing something that almost everyone in the infosec community has. I have lost count of how many applications I've sent out. Bellingcat gave me an opportunity not because of my educational background, but because I could ship useful code.
-Understandably,  I know that the job market isn't in a very good state right now, but try being self-taught without formal education, and from a African country that is not very well known.
+I've applied to Software Engineer roles requiring Python and/or Rust (sometimes both), Python Developer positions, companies specifically looking for OSINT tool developers, and automation work. Rroles where my experience directly applies. But my lack of formal education (or maybe location?) seems to always be my disqualifying trait. 
+
+I've seen a company drop me from a position that I was 100% a good fit for. I had every technical requirement they were looking for apart from a Bachelor's degree, but they instead went for someone who was less technically qualified than me. They just had an education from a known college and a Bachelor's degree. 
+One company even had me do free work for them as a "take-home assignment" and then, after a week and half of solving the problem, I submitted my work, but they went dark. They never got back to me (even a rejection email would have been nice). 
+
+Experiencing this, repeatedly, makes you lose confidence in your ability to do things that you know deep down you're capable of. Ned once told me that I should be proud of what I have achieved. I try to be, but it's hard to see the work I've done when I'm missing something that most other developers have. I have lost count of how many applications I've sent out. Bellingcat gave me an opportunity not because of my educational background, but because I could ship useful code.
+Understandably, I know that the job market isn't in a very good state right now, but try being self-taught without formal education, and from a African country that is probably not very well known and see how it goes for you.
 
 ### Here's What I Really Want to Say:
 
 My reality has been one where I had to work harder than most just to see some change or get noticed. I'm not asking for favours. I'm asking to be seen for my capability and resilience, for what I overcame despite all the obstacles. For what I achieved with the little resources I had, and what I've managed to achieve with the resources I have now.
 
-I'm just tired of being judged by educational requirements instead of the proof of my work and where I come from; a dark place, where $1.6 was decent payment for a day's worth of manual labor.
+I'm just tired of being judged by educational requirements instead of the proof of my work and where I come from; a dark place, where $2.2 was decent payment for a day's worth of manual labor.
 
 I have repositories. I have contributions to organisations doing real work. I have tools that security researchers use. I worked at Bellingcat for 8 months. I have a mentor from Google Project Zero who sees something in me. I learned English from reading books. I learned to code on a phone with a cracked screen while working construction.
 But it feels like none of that matters as much as a piece of paper I don't have.
@@ -105,13 +111,13 @@ I would like to act ignorant and say "there's probably a good reason why this is
 I just wish more companies would look at what someone can actually do instead of where they studied. Or didn't study.
 
 ## Footnotes
-[^1]: I actually left that school with a balance of K220 (equivalent of roughly $10).
+[^1]: I actually left that school with a balance of K220 (equivalent of roughly $10). The school would permanently close (I think they went bankrupt) around 3 - 4 years later.
 
 [^2]: Not precise, but in the same area.
 
 [^3]: If you're from where I come from, this was decent money, and most importanly, "better than nothing"
 
-[^4] My very first project and GitHub repo was [**riddler_program**](https://github.com/rly0nheart/riddler_program/tree/f3db4acdea6ffa0777d64b4412d319565ac08849), and [**this here**](https://github.com/rly0nheart/riddler_program/tree/main) is the same code after getting help from Stephen. I started writing code for the riddler_program in late 2019.
+[^4] My very first project and GitHub (which I started working on in late 2019) repo was [**riddler_program**](https://github.com/rly0nheart/riddler_program/tree/f3db4acdea6ffa0777d64b4412d319565ac08849), and [**this here**](https://github.com/rly0nheart/riddler_program/tree/main) is the same code after getting help from Stephen.
 
 [^5]: The name varies depending on which part of Africa you're in and in what language you're saying it.
 
@@ -119,4 +125,4 @@ I just wish more companies would look at what someone can actually do instead of
 
 [^7]: So I would get 2 months worth of payment, plus €800 for a laptop, totalling to €2,800.
 
-[^8]: Fun fact, I learned about automatically pushing packages to PyPI through workflows from someone at Bellingcat. Before that, I would manually build my packages with pip and publish them with twine.
+[^8]: Fun fact, I learned about automatically pushing packages to PyPI through workflows from someone at Bellingcat. Before that, I would manually build my packages with pip and publish them with twine. This wasn't even exhausting for me, just business as usual.
