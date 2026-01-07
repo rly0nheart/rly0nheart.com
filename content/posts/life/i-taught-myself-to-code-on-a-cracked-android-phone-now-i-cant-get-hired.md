@@ -7,12 +7,12 @@ categories:
   - life
 ---
 
-Truth be told, I come across a fair number of people who ask me how I learned to code. They usually say something like, "which college/university did you study from?" assuming I went to college or university. But that's not what happened. **I never went to college or university. I've never even been to high school. I taught myself to code on an Android phone with a cracked screen.** I know, this probably sounds like an exaggeration, but it's not.
+Truth be told, I come across a fair number of people who ask me how I learned to code. They usually say something like, "which college/university did you study from?" assuming I went to college or university. But that's not what happened. You see, **I never went to college or university. I've never even been to high school. I taught myself to code on an Android phone with a cracked screen.** I know, this probably sounds like an exaggeration, but it's not.
 
 ## How Did I Get Here?
 
 **2016**, I dropped out of school after writing my grade 9 exams because my mum couldn't afford to pay for my school fees[^1].
-I always liked books, and after dropping out of school, I started going to the library everyday (unlike when I was in school, going every Friday), reading novels, science books, you name it. [**The library**](https://www.google.com/maps/place/Fountain+of+Hope/-15.4313094,28.2873744), felt like a  50 minute walk from where [**I lived**](https://google.com/maps/place/@-15.450211504436188,28.284824244249144)[^2]. At 15 years of age and with nothing else to do, I didnt mind walking that distance. 
+I always liked books, and after dropping out of school, I started going to the library everyday (unlike when I was in school, going every Friday), reading novels, science books, you name it. The library (which is part of an orphanage named [**Fountain of Hope**](https://share.google/eTjD5MwE2LVEqKVPX)), felt like a  50 minute walk from where I lived (in [**this area**](https://www.google.com/maps?q=-15.449444,28.284444)). At 15 years of age and with nothing else to do, I didnt mind walking that distance. 
 I read anything that would catch my attention. This was particularly enjoyable because it felt like I was in complete control of what I wanted to learn. I was never very confident in my ability to speak English during my school days, but reading books gave me the confidence. Whatever English I knew then, was significantly improved by reading books.
 
 ## The Construction Job and Getting a Smartphone to Code On
@@ -21,8 +21,8 @@ I read anything that would catch my attention. This was particularly enjoyable b
 
 I would write the notes in a book and then later look at them (like studying). Doing the construction work meant I could save up for a smartphone and actually write the code I had been playing around with in my head. 
 
-The pay at this company was K240 (equivalent of $10.6) per week (excluding Sundays), from 7 a.m. to 4 p.m.[^3]. We were working for K50 (equivalent of  $2.2) per day, minus K10 (equivalent of $0.4) for lunch. This gave some the illusion that lunch was provided, when it was actually coming from their pay, and it was not uncommon for some workers to ask for their K10 and to buy their own lunch. 
-During lunch, those who decided to eat together would be in groups of at least 2, and then go to a restaurant and buy [**Nsima**](https://en.wikipedia.org/wiki/Ugali)[^4] worth K20. Mind you, it wasn't the best kind of Nsima you can get, after all, it was cheap.
+The pay at this company was K240 (equivalent of $10.6) per week (excluding Sundays), from 7 a.m. to 4 p.m.[^2]. We were working for K50 (equivalent of  $2.2) per day, minus K10 (equivalent of $0.4) for lunch. This gave some the illusion that lunch was provided, when it was actually coming from their pay, and it was not uncommon for some workers to ask for their K10 and to buy their own lunch. 
+During lunch, those who decided to eat together would be in groups of at least 2, and then go to a restaurant and buy [**Nsima**](https://en.wikipedia.org/wiki/Ugali)[^3] worth K20. Mind you, it wasn't the best kind of Nsima you can get, after all, it was cheap.
 
 After about 5 months of working for this company, I had managed to save up around K750 (equivalent of $34), and got myself a second hand smartphone, an [**itel S15**](https://www.gsmchoice.com/en/catalogue/itel/s15/). 
 
@@ -102,27 +102,30 @@ My reality has been one where I had to work harder than most just to see some ch
 
 I'm just tired of being judged by educational requirements instead of the proof of my work and where I come from; a dark place, where $2.2 was decent payment for a day's worth of manual labor.
 
-I have repositories. I have contributions to organisations doing real work. I have tools that security researchers use. I worked at Bellingcat for 8 months. I have a mentor from Google Project Zero who sees something in me. I learned English from reading books. I learned to code on a phone with a cracked screen while working construction.
+I have repositories, contributions to organisations doing real work, tools that security researchers use, worked at Bellingcat for 8 months, have a mentor from Google Project Zero who sees something in me, learned English from reading books, and learned to code on a phone with a cracked screen while working construction.
 But it feels like none of that matters as much as a piece of paper I don't have.
-I don't even get interviews. The last one I had was clearly by accident, and I didn't have the specific experience they wanted anyway. Most of the time, I just send applications into the void and never hear back. I'm being filtered out before anyone even looks at my GitHub, before anyone sees what I can actually do.
+I don't even get interviews. The last one I had was clearly by accident, and I didn't have the specific experience they wanted anyway. Most of the time, I just send applications into the void and never hear back. I'm being filtered out before anyone even looks at my GitHub, before anyone sees what I can actually do. 
+
+The emergence of LLMs and AI coding agents makes me feel even worse about it all. I've read articles about companies laying off developers because "AI is as good as an entry to mid-level developer." This scares me because it feels like I have even fewer chances of getting a shot at proving myself and what I've learned.
+I don't want to sound entitled, but it's hard not to feel discouraged. For self-taught developers, it feels like all that effort might not matter anymore. Not because we're not good enough, but because companies see an LLM as cheaper and easier than taking a chance on unconventional candidates. And for developers who did everything 'right', went to university, got the credentials, built their careers, many are being laid off and replaced by AI tools. If even they're being filtered out despite having everything the system asked for, what chance does anyone outside the traditional path have? It feels like the bar keeps moving, and not in a way that rewards actual ability.
 
 I would like to act ignorant and say "there's probably a good reason why this is happening", but companies make it so obvious.
-
 I just wish more companies would look at what someone can actually do instead of where they studied. Or didn't study.
 
+I know some of this might sound bitter. Maybe it is. But it comes from real experiences. Countless rejections without explanation, watching companies choose candidates with degrees over candidates with proof, never even getting to the interview stage despite having the skills they're asking for. This isn't about one bad experience or one unlucky break. It's about a pattern I've lived through repeatedly, and I needed to say it out loud.
+
 ## Footnotes
+
 [^1]: I actually left that school with a balance of K220 (equivalent of roughly $10). The school would permanently close (I think they went bankrupt) around 3 - 4 years later.
 
-[^2]: Not precise, but in the same area.
+[^2]: If you're from where I come from, this was decent money, and most importanly, "better than nothing"
 
-[^3]: If you're from where I come from, this was decent money, and most importanly, "better than nothing"
+[^3]: My very first project and GitHub (which I started working on in late 2019) repo was [**riddler_program**](https://github.com/rly0nheart/riddler_program/tree/f3db4acdea6ffa0777d64b4412d319565ac08849), and [**this here**](https://github.com/rly0nheart/riddler_program/tree/main) is the same code after getting help from Stephen.
 
-[^4] My very first project and GitHub (which I started working on in late 2019) repo was [**riddler_program**](https://github.com/rly0nheart/riddler_program/tree/f3db4acdea6ffa0777d64b4412d319565ac08849), and [**this here**](https://github.com/rly0nheart/riddler_program/tree/main) is the same code after getting help from Stephen.
+[^4]: The name varies depending on which part of Africa you're in and in what language you're saying it.
 
-[^5]: The name varies depending on which part of Africa you're in and in what language you're saying it.
+[^5]: Octosuite is currently the most starred repository on Bellingcat's GitHub org (as of writing), with 1.8k stars and over 150 forks.
 
-[^6]: Octosuite is currently the most starred repository on Bellingcat's GitHub org, with 1.9k stars and over 150 forks.
+[^6]: So I would get 2 months worth of payment, plus €800 for a laptop, totalling to €2,800.
 
-[^7]: So I would get 2 months worth of payment, plus €800 for a laptop, totalling to €2,800.
-
-[^8]: Fun fact, I learned about automatically pushing packages to PyPI through workflows from someone at Bellingcat. Before that, I would manually build my packages with pip and publish them with twine. This wasn't even exhausting for me, just business as usual.
+[^7]: Fun fact, I learned about automatically pushing packages to PyPI through workflows from someone at Bellingcat. Before that, I would manually build my packages with pip and publish them with twine. This wasn't even exhausting for me, just business as usual.
