@@ -1,6 +1,6 @@
 ---
 author: Ritchie
-date: 2025-12-28T10:40:14+02:00
+date: 2026-01-12T15:00:00+02:00
 title: I Taught Myself to Code on a Cracked Android Phone. Now I Can't Get Hired
 draft: true
 categories:
