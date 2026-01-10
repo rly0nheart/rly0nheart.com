@@ -32,7 +32,7 @@ I had to quit working at the construction company, as they started delaying paym
 
 ## Building Tools and Finding My Community
 
-**2020 - 2021**, I was on Facebook then, so I had joined as many groups about programming as I could. That's how I made friends with [**Stephen Cafferty**](https://github.com/caff1982). Stephen helped me a lot throughout my Python journey. He helped me debug my code, showed me some Python tricks[^4], and would eventually help me write a draft application and CV for my first job as a Software Developer for Bellingcat. 
+**2020 - 2021**, I was on Facebook then, so I had joined as many groups about programming as I could. That's how I made friends with [**Stephen Cafferty**](https://github.com/caff1982). Stephen helped me a lot throughout my Python journey. He became my Python mentor, and helped me debug my code, showed me a lot of Python tricks[^4], and would eventually help me write a draft application and CV for my first job as a Software Developer for Bellingcat. I learned the idea of "research first, ask questions later" from him. 
 
 In order to code properly, I needed internet, so I would save up K5 (the equivalent of $0.22) to buy 750MB worth of internet data which would expire after 7 days, and if I used it up before the 7 days, I would have to buy the same bundle again. 
 
@@ -75,7 +75,7 @@ After my contract with Bellingcat ended, I started doing freelance work. Which w
 
 After a string of scheduled powercuts in my country that would sometimes last for 19 hours, I felt that I needed to get myself a job in order to survive the powercuts and continue doing my work without interruption. So I decided to focus on that, and had to quit my volunteer work with OFU after a year. 
 
-## Meeting My Mentor
+## Meeting My Current Mentor
 
 During my last days at OFU, I met my mentor through Florian. Florian, sent me a message on Xitter and told me that someone from Google Project Zero wanted to talk to me and possibly mentor me, he also mentioned that this someone was one of the people that donated to me on Buy Me A Coffee. That's how I met [**Ned Williamson**](https://xcancel.com/NedWilliamson). Since then, Ned and I have been meeting biweekly, discussing and fixing software issues, personal lives, sometimes politics, lol, comedy. Ned has become more than a mentor to me, he's become a trusted friend, and I have become one to him. He's become someone I can talk to when I feel down, and I try my best to comfort him when he needs someone to talk to as well.
 
