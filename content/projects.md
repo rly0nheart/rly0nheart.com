@@ -3,7 +3,7 @@ title: Projects
 layout: default
 ---
 
-* `private` [**cerium**](https://codeberg.org/rly0nheart/cerium) : *A ls-like utility that is NOT trying to replace ls*
+* `private` [**cerium**](https://codeberg.org/rly0nheart/cerium) : *Yet another ls-like util that is NOT trying to replace ls*
 
 * `public` [**humanly**](https://crates.io/crates/humanly): *A pure Rust crate to convert numbers, sizes, durations, times, and percentages into human-readable formats*
 
