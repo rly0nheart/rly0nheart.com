@@ -1,8 +1,7 @@
 ---
 author: Ritchie
-date: 2026-01-12T15:00:00+02:00
+date: 2026-01-12T01:50:00+02:00
 title: I Taught Myself to Code on a Cracked Android Phone. Now I Can't Get Hired
-draft: true
 categories:
   - life
 ---
@@ -101,7 +100,7 @@ Experiencing this, repeatedly, makes you lose confidence in your ability to do t
 
 Understandably, I know that the job market isn't in a very good state right now, but try being self-taught without formal education, and from an African country that isn't very well known in the global tech community then see how it goes for you.
 
-### Here's What I Really Want to Say
+## What I Really Want to Say
 
 My reality has been one where I had to work harder than most just to see some change or get noticed. I'm not asking for favours. I'm asking to be seen for my capability and resilience, for what I overcame despite all the obstacles. For what I achieved with the little resources I had, and what I've managed to achieve with the resources I have now.
 
@@ -121,7 +120,6 @@ I don't want to sound entitled, but it's hard not to feel discouraged. For self-
 
 I know some of this might sound bitter. Maybe it is. But it comes from real experiences. Countless rejections without explanation, watching companies choose candidates with degrees over candidates with proof, never even getting to the interview stage despite having the skills they're asking for. This isn't about one bad experience or one unlucky break. It's about a pattern I've lived through repeatedly, and I needed to say it out loud.
 
-## Footnotes
 
 [^1]: I actually left that school with a balance of K220 (roughly $10). The school permanently closed around 3 - 4 years after I dropped out.
 
