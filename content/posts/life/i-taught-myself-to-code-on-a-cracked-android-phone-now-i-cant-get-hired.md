@@ -7,7 +7,7 @@ categories:
   - life
 ---
 
-> Thanks everyone for reading and the attentions to this, it's really encouraging. Meanwhile just a warning: **please be careful about any fundraising page in my name, they're a scammer impersonating me by name-squatting my defunct handles on about.me and twitter!** 
+> Thanks everyone for reading and the attentions to this, it's really encouraging. Meanwhile just a warning: **please be careful about any fundraising page in my name, they're a scammer impersonating me by name-squatting my defunct handles on about.me and twitter! My verified profiles are on [Gravatar](https://gravatar.com/rly0nheart)**
 But please do contact me if my profile is of interest, and thanks for the warm wishes!
 
 I come across a fair number of people who ask me how I learned to code. They usually say something like, "which college/university did you study from?" assuming I went to college or university. But that's not what happened. You see, **I never went to college or university. I've never even been to high school. I taught myself to code on an Android phone with a cracked screen.** I know, this probably sounds like an exaggeration, but it's not.
