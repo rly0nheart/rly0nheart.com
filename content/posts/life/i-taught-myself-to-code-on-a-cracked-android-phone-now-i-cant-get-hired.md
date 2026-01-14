@@ -16,7 +16,7 @@ Thanks everyone for reading and the attention to this, it's really encouraging.
 **Meanwhile just a warning**: please be careful about any fundraising page in my name (**with crypto wallets**), they're a scammer impersonating me by name-squatting my defunct handles on [**About.me**](https://about.me/rly0nheart), [**X/Twitter**](https://x.com/rly0nheart), and something called [**Coindrop**](https://coindrop.to/rly0nheart). Those accounts **ARE NOT MINE**, they're owned by someone attempting to scam people using my name and face.
 
 
-**My verified profiles are on** [Gravatar.com](https://gravatar.com/rly0nheart)
+**My verified profiles are on** [Gravatar.com](https://gravatar.com/rly0nheart) **and at the bottom of this website.**
 
 But please do contact me if my profile is of interest, and thanks for the warm wishes!
 
