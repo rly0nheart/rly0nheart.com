@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="{{ "css/font.css" | relURL }}"/>
 <link rel="stylesheet" href="{{ "css/smigle.css" | relURL }}"/>
 <link rel="stylesheet" href="{{ "css/subscribe.css" | relURL }}"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/all.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   {{ range .Site.Params.customStylesheets }}
 <link rel="stylesheet" href="{{ . | relURL }}"/>
   {{ end }}
@@ -33,6 +33,6 @@
 </script>
 <!--Handles the theme toggle button (dark/light mode)-->
 <script>
-  (function(){const sunIcon=`<i class="fa-solid fa-sun"></i>`,moonIcon=`<i class="fa-solid fa-moon"></i>`,g=()=>{const s=localStorage.getItem('theme');return s?s:window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'},s=t=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t)};s(g());const initialTheme=g(),initialIcon=initialTheme==='light'?moonIcon:sunIcon;document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.theme-toggle');if(b){b.innerHTML=initialIcon;b.classList.add('loaded');b.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme'),newTheme=c==='light'?'dark':'light';b.classList.add('spin');s(newTheme);b.innerHTML=newTheme==='light'?moonIcon:sunIcon;setTimeout(()=>b.classList.remove('spin'),500)})}})})();
+  (function(){const sunIcon=`<i class="fa-regular fa-sun"></i>`,moonIcon=`<i class="fa-regular fa-moon"></i>`,g=()=>{const s=localStorage.getItem('theme');return s?s:window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'},s=t=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t)};s(g());const initialTheme=g(),initialIcon=initialTheme==='light'?moonIcon:sunIcon;document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.theme-toggle');if(b){b.innerHTML=initialIcon;b.classList.add('loaded');b.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme'),newTheme=c==='light'?'dark':'light';b.classList.add('spin');s(newTheme);b.innerHTML=newTheme==='light'?moonIcon:sunIcon;setTimeout(()=>b.classList.remove('spin'),500)})}})})();
 </script>
 </head>

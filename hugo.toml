@@ -13,7 +13,7 @@ theme = 'smigle'
 
   [[params.social]]
     name = "Gravatar"
-    pre = '<i class="fa-solid fa-earth-africa"></i>'
+    pre = '<i class="fa-regular fa-earth-africa"></i>'
     url = "https://gravatar.com/rly0nheart"
   [[params.social]]
     name = "Codeberg"
@@ -33,42 +33,42 @@ theme = 'smigle'
     url = "https://linkedin.com/in/rly0nheart"
   [[params.social]]
     name = "Email"
-    pre = '<i class="fa-solid fa-envelope"></i>'
+    pre = '<i class="fa-regular fa-envelope"></i>'
     url = "mailto:hi@rly0nheart.com"
 
 [menu]
   [[menu.main]]
     name = "Home"
-    pre = '<i class="fa-solid fa-house"></i>'
+    pre = '<i class="fa-regular fa-house"></i>'
     url = "/"
     weight = 1
   [[menu.main]]
     name = "About"
-    pre = '<i class="fa-solid fa-user"></i>'
+    pre = '<i class="fa-regular fa-user"></i>'
     url = "/about"
     weight = 2
   [[menu.main]]
     name = "Posts"
-    pre = '<i class="fa-solid fa-book"></i>'
+    pre = '<i class="fa-regular fa-book"></i>'
     url = "/posts"
     weight = 3
   [[menu.main]]
     name = "RSS"
-    pre = '<i class="fa-solid fa-rss"></i>'
+    pre = '<i class="fa-regular fa-rss"></i>'
     url = "/index.xml"
     weight = 4
   [[menu.main]]
     name = "Projects"
-    pre = '<i class="fa-solid fa-code"></i>'
+    pre = '<i class="fa-regular fa-code"></i>'
     url = "/projects"
     weight = 5
   [[menu.main]]
     name = "Tags"
-    pre = '<i class="fa-solid fa-tags"></i>'
+    pre = '<i class="fa-regular fa-tags"></i>'
     url = "/tags"
     weight = 6
   [[menu.main]]
     name = "Categories"
-    pre = '<i class="fa-solid fa-layer-group"></i>'
+    pre = '<i class="fa-regular fa-layer-group"></i>'
     url = "/categories"
     weight = 7
