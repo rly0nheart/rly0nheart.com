@@ -3,7 +3,7 @@
    ============================================ */
 /* Main content container with centered layout */
 #root {
-  font-family: Iosevka, monospace;
+  font-family: Iosevka, monospace !important;
   max-width: 750px;
   margin: 0 auto;
   padding: 10px;
@@ -86,6 +86,26 @@ h3.subtitle {
 /* Post metadata section */
 div.post-meta {
   margin-top: 1.3rem;
+}
+
+/* First letter of article styled as drop cap */
+.content > p:first-child:first-letter {
+  color: var(--fontcolor);
+  float: left;
+  font-weight: bold;
+  font-size: 71px;
+  line-height: 20px;
+  padding-top: 4px;
+}
+
+/* Clear float on headings so they don't wrap around drop cap */
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  clear: left;
 }
 
 /* ============================================

@@ -8,6 +8,7 @@ tags:
   - python
   - pycharm
   - jetbrains
+  - learning
 ---
 
 I've been running Fedora Silverblue for a while now, and recently, I ran into a simple, yet frustrating issue with PyCharm: 

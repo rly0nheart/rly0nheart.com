@@ -8,6 +8,7 @@ categories:
 tags:
   - python
   - pycharm
+  - learning
 ---
 
 About 3 days ago, I published a post about [**Fixing PyCharm's Missing Imports and Linting on Fedora Silverblue**](http://localhost:1313/posts/programming/fixing-pycharms-missing-imports-and-linting-on-fedora-silverblue/), but a day later, I ran into yet another venv-related issue.
