@@ -89,7 +89,7 @@ div.post-meta {
 }
 
 /* First letter of article styled as drop cap */
-.content > p:first-child:first-letter {
+article.content > p:first-child:first-letter {
   color: var(--fontcolor);
   float: left;
   font-weight: bold;
