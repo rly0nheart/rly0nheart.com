@@ -11,7 +11,7 @@ layout: default
 
 * `public archive` [**knewkarma**](https://pypi.org/project/knewkarma): *Zero-auth toolkit for Reddit data analysis.*
 
-* `public` [**octosuite**](https://pypi.org/project/octosuite): *TUI-based toolkit for GitHub-data analysis*
+* `public` [**octosuite**](https://pypi.org/project/octosuite): *Terminal-based toolkit for GitHub data analysis.*
 
 * `public archive` [**oxdork**](https://pypi.org/project/oxdork): *Google dorking tool*
 
