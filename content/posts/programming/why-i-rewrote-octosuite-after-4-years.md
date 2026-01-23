@@ -1,6 +1,7 @@
 ---
 author: Ritchie
 date: 2026-01-22T10:23:00+02:00
+lastMod: 2026-01-23T01:10:00+02:00
 title: Why I Rewrote Octosuite After 4 Years
 categories:
   - programming
@@ -45,7 +46,9 @@ The answer was yes, because back then, I didn't know any better. And that's fine
 
 ## Deciding What to Do
 
-My first instinct was to turn it into a proper CLI tool. You know, commands and flags, something you could script: `octosuite search --user username --output csv`. That felt like the professional thing to do.
+Initially, Octosuite was a hybrid of a CLI and REPL, but one of those was badly implemented. So this time, I needed to either properly rewrite the badly implemented part, or just ditch the hybrid all together (keeping it simple and stupid).
+
+My first instinct was to turn it into a proper CLI tool (ditching the REPL). That felt like the 'professional' thing to do since it would make Octosuite very scriptable.
 
 I started planning it out. Mapping commands, thinking through arguments, writing help documentation. This was going to be proper software.
 
@@ -83,7 +86,7 @@ It wasn't being dramatic. It genuinely would have taken longer to fix than to re
 
 So, this time, I built it right. Functions that do one thing. Variables with meaningful names. Proper separation between the code that talks to the API and the code that displays information. Structure that makes sense. Clean, maintainable code that I could actually be proud of. I also cut out features that were less likely to be used.
 
-## What I Learned
+## Moral of the Story
 
 Opening those old files and seeing just how far I'd come was surreal. That messy code wasn't written by someone careless or lazy. It was written by someone learning, doing their best with what they knew and the constraints they had. Past me got it working and shipped something useful. That counts for something.
 
@@ -93,7 +96,9 @@ Octosuite started as something I hacked together on a phone during my first inte
 
 Though let's be honest, I'll probably open this code in a couple of years and think the exact same thing: *Did I really write this?* And that'll be a good sign. It'll mean I'm still learning, still getting better.
 
+I've been working on the cli-tui hybrid locally, but I haven't yet decided if I want to have it in the main code. I'll probably write a post about it if I push the hybrid to GitHub.
+
 If you'd like to see the difference between the legacy and new versions of Octosuite, you can checkout the oldest on the [legacy-history branch](https://github.com/bellingcat/octosuite/tree/legacy-history) on GitHub, and the newest on the [master branch](https://github.com/bellingcat/octosuite/tree/master). Who knows, maybe you'll find something I haven't noticed yet.
 
 
-[^1]: GUI elements are called Widgets in Tkinter. [Read more](https://www.geeksforgeeks.org/python/what-are-widgets-in-tkinter/)
+[^1]: GUI elements are called Widgets in Tkinter. [This article](https://www.geeksforgeeks.org/python/what-are-widgets-in-tkinter/) on GeeksforGeeks explains is well.
