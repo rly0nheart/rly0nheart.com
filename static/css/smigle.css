@@ -88,8 +88,8 @@ div.post-meta {
   margin-top: 1.3rem;
 }
 
-/* First letter of article styled as drop cap */
-article .content > p:first-child:first-letter {
+/* First letter of article styled as drop cap (single article only, not summaries) */
+article:not(.summary) .content > p:first-child:first-letter {
   color: var(--fontcolor);
   float: left;
   font-weight: bold;
