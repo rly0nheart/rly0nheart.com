@@ -28,7 +28,7 @@ src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
 </nav>
 <hr/>
 <script>
-    (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='color:var(--bgcolor);background:var(--fontcolor);border-radius:2.5px;padding:3px;pointer-events:none'})})();
+    (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='color:var(--bgcolor);background:var(--fontcolor);border-radius:2px;padding:3px;pointer-events:none'})})();
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
