@@ -3,7 +3,9 @@ title: About
 layout: default
 ---
 
-I'm a Software Engineer from the **Milky Way**, on **Earth**, in **Africa**, in [**Zambia**](https://en.wikipedia.org/wiki/Zambia), with 5 years of experience making and trying to break software. Most of my work involves building data, and open-source intelligence (OSINT) tools, but I also enjoy working on random side projects that sound interesting. I play guitar, I'm both a mentor and mentee, and *I know how to do a backflip* :).
+I'm a Software Engineer from [**Zambia**](https://en.wikipedia.org/wiki/Zambia), with 5 years of experience making and trying to break software. Most of my work involves building data, and open-source intelligence (OSINT) tools, but I also enjoy working on random side projects that sound interesting.
+
+**I'm a dad. A mentor and mentee. I play guitar. And I know how to do a backflip :).**
 
 I've worked as an Investigative Tech Fellow and Software Developer at Bellingcat, and as a Software Developer at OSINT For Ukraine. These days I do contract work as a Software Engineer, mostly for people and organisations doing interesting things with data.
 
