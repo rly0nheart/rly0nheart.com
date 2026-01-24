@@ -8,12 +8,13 @@ tags:
   - AI
   - Music
 ---
-So, there's this ['Afro Soul' cover](https://open.spotify.com/track/76952ZbAHlgMqrIEMqYkgB?si=a7d294272a7e4da9) of [Stromae's "Papaoutai"](https://open.spotify.com/track/34dx8DACTJsc3rsJdaEIQw?si=2b7a186df3d84f03) that has been everywhere lately. The internet has once again done what it does best: made it go viral, and it eventually found its way to me.
-As for the song in question, it's good. **REALLY GOOD.** The choral and Afro touches, as well as the flow. It takes Stromae's original and flips it into something that feels completely fresh. I had it on repeat.
+So, there's this ['Afro Soul' cover](https://open.spotify.com/track/76952ZbAHlgMqrIEMqYkgB?si=a7d294272a7e4da9) of [Stromae's "Papaoutai"](https://open.spotify.com/track/34dx8DACTJsc3rsJdaEIQw?si=2b7a186df3d84f03) that has been everywhere lately. The internet has once again done what it does best: make things go viral, and it made this song viral until it eventually found its way to my part of the internet.
+
+I listened to the song and... it's good?. **REALLY GOOD.** The choral and Afro touches, as well as the flow. It takes Stromae's original and flips it into something that feels completely fresh. I had it on repeat.
 
 For the record:
 
-> I don't understand French. My mentee teaches me French, as he is a native speaker. I can pronounce certain words with some accuracy, and I can do a short conversation. That's it. But **I love French Music!** My top French artists so far are Stromae, Barbara Pravi, and MPL. Then it gets random from there.
+> My understanding of French is on the Beginner level. My mentee teaches me French, as he is a native speaker. I can pronounce certain words with some accuracy, and I can do a short conversation, and that's it. But **I love French Music!** My top French artists so far are Stromae, Barbara Pravi, and MPL. Then it gets random from there.
 
 Naturally, I wanted a proper copy for my Hard Drive. So I headed over to my usual *trusted source* (you know the kind) to grab a FLAC. But I couldn't find it!
 So I did what I'm never proud of doing, I opened DuckDuckGo and typed "Papaoutai Afro Soul download" (like some kind of amateur).
