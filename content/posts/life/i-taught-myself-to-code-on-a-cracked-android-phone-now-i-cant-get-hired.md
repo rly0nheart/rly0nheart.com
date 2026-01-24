@@ -4,7 +4,7 @@ date: 2026-01-12T01:50:00+02:00
 title: I Taught Myself to Code on a Cracked Android Phone. Now I Can't Get Hired
 lastMod: 2026-01-23T01:10:00+02:00
 categories:
-  - life
+  - Life
 ---
 
 

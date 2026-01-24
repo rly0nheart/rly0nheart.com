@@ -21,12 +21,6 @@
   text-align: center;
 }
 
-/* Brand links styling */
-#brand a {
-  color: var(--fontcolor);
-  text-decoration: none;
-}
-
 /* Brand headings reset */
 #brand h1,
 #brand h3 {
@@ -165,16 +159,17 @@ article:not(.summary) .content > p:first-child:first-letter {
    ============================================ */
 /* Terms list container */
 #terms {
-  list-style: none;
+  list-style: outside !important;
 }
 
 /* Individual term/tag styling */
 #terms .term {
-  background-color: var(--dimcolor);
+  /*background-color: var(--dimcolor);
   border-radius: 3px;
   display: inline-block;
   margin: 2px;
-  padding: 8px;
+  padding: 8px;*/
+  list-style-type: disc !important;
 }
 
 /* ============================================

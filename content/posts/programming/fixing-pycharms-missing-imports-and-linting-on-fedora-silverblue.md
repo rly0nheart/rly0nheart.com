@@ -3,12 +3,12 @@ author: Ritchie
 date: 2025-12-22T23:18:00+02:00
 title: Fixing PyCharm's Missing Imports and Linting on Fedora Silverblue
 categories:
-  - programming
+  - Programming
 tags:
-  - python
-  - pycharm
-  - jetbrains
-  - learning
+  - Python
+  - PyCharm
+  - Jetbrains
+  - Learning
 ---
 
 I've been running Fedora Silverblue for a while now, and recently, I ran into a simple, yet frustrating issue with PyCharm: 

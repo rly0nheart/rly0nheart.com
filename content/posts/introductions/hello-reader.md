@@ -4,7 +4,7 @@ date: 2025-12-19T10:40:14+02:00
 title: Hello, Reader
 lastMod: 2025-12-21T21:59:00+02:00
 categories:
-  - introductions
+  - Introductions
 ---
 
 I'm Ritchie, and in this blog I'll be sharing things I'm learning, learned, learnt, projects I'm working on, security research, development insights, and probably some thoughts on music and life in between. Think of it as a digital notebook that happens to be public.

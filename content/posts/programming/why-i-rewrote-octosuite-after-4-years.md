@@ -4,10 +4,10 @@ date: 2026-01-22T10:23:00+02:00
 lastMod: 2026-01-23T01:10:00+02:00
 title: Why I Rewrote Octosuite After 4 Years
 categories:
-  - programming
+  - Programming
 tags:
-  - python
-  - learning
+  - Python
+  - Learning
 ---
 
 In case you don't already know, Octosuite is a GitHub OSINT (Open Source Intelligence) framework. Basically a tool that helps investigators, journalists, and researchers dig into publicly available GitHub data. It can pull information on users, repositories, organisations, and more, making it easier to investigate accounts and understand what's happening on the platform.

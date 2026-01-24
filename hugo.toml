@@ -2,6 +2,14 @@ baseURL = 'https://rly0nheart.com/'
 languageCode = 'en-GB'
 title = "Ritchie Mwewa"
 theme = 'smigle'
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'
+
 [params]
   brandIconFile = "logo.png"
   subtitle = "Bipedal Software Engineer from the Milky Way"
@@ -21,7 +29,7 @@ theme = 'smigle'
     url = "https://codeberg.org/rly0nheart"
   [[params.social]]
     name = "GitHub"
-    pre = '<i class="fa-brands fa-github"></i>'
+    pre = '<i class="fa-brands fa-github-alt"></i>'
     url = "https://github.com/rly0nheart"
   [[params.social]]
     name = "Bluesky"
@@ -29,7 +37,7 @@ theme = 'smigle'
     url = "https://bsky.app/profile/rly0nheart.com"
   [[params.social]]
     name = "LinkedIn"
-    pre = '<i class="fa-brands fa-linkedin"></i>'
+    pre = '<i class="fa-brands fa-linkedin-in"></i>'
     url = "https://linkedin.com/in/rly0nheart"
   [[params.social]]
     name = "Email"
@@ -39,7 +47,7 @@ theme = 'smigle'
 [menu]
   [[menu.main]]
     name = "Home"
-    pre = '<i class="fa-regular fa-house"></i>'
+    pre = '<i class="fa-regular fa-home"></i>'
     url = "/"
     weight = 1
   [[menu.main]]
@@ -53,7 +61,7 @@ theme = 'smigle'
     url = "/posts"
     weight = 3
   [[menu.main]]
-    name = "RSS"
+    name = "Feed"
     pre = '<i class="fa-regular fa-rss"></i>'
     url = "/index.xml"
     weight = 4
