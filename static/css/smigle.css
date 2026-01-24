@@ -170,7 +170,7 @@ article:not(.summary) .content > p:first-child:first-letter {
 
 /* Individual term/tag styling */
 #terms .term {
-  background-color: #504945;
+  background-color: var(--dimcolor);
   border-radius: 3px;
   display: inline-block;
   margin: 2px;
