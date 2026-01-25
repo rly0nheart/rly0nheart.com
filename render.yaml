@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: rly0nheart.com
-    runtime: static
-    buildCommand: hugo --gc --minify
-    staticPublishPath: public
-    envVars:
-      - key: HUGO_VERSION
-        value: "0.152.2"
