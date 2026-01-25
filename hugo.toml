@@ -1,7 +1,7 @@
 baseURL = 'https://rly0nheart.com/'
 languageCode = 'en-GB'
 title = "Ritchie Mwewa"
-theme = 'smigle'
+theme = ['smigle']
 [[module.mounts]]
 source = 'static'
 target = 'static'
@@ -9,6 +9,9 @@ target = 'static'
 [[module.mounts]]
 source = 'images'
 target = 'static/images'
+
+[[module.imports]]
+    path = "github.com/KKKZOZ/hugo-admonitions"
 
 [params]
   brandIconFile = "logo.png"

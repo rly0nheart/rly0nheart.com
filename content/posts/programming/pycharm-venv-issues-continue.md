@@ -31,20 +31,22 @@ After some back and forths with Claude, I realised I had a **global venv in my h
 
 When PyCharm (and the new `uv` package manager) looked for a venv, they were finding the global one first instead of my project's venv. This caused all sorts of confusion:
 
-```bash
-# uv was using the global venv instead of the project one
-uv pip list
-
-Using Python 3.14.2 environment at: /var/home/rly0nheart/.venv
-```
+> [!Code] Shell
+> ```bash
+> # uv was using the global venv instead of the project one
+> uv pip list
+> 
+> Using Python 3.14.2 environment at: /var/home/rly0nheart/.venv
+> ```
 
 But here's where it gets interesting. When I checked the global venv:
 
-```bash
-~/.venv/bin/python --version
-
-Python 3.13.11
-```
+> [!Code] Shell
+> ```bash
+> ~/.venv/bin/python --version
+>
+> Python 3.13.11
+> ```
 
 Wait, what? The venv says 3.13.11, but `uv` detected 3.14.2?
 
@@ -52,23 +54,25 @@ Wait, what? The venv says 3.13.11, but `uv` detected 3.14.2?
 
 When I created `~/.venv` in July, my host system had Python 3.13. The venv's Python was a symlink to `/usr/bin/python`:
 
-```bash
-# 'ce' command is from cerium, my ls-like command-line utility (currently private). 
-# Replacing 'ce' with 'ls' should work all the same.
-
-ce -la ~/.venv/bin/python
-
-lrwxrwxrwx@ 15 rly0nheart Jul 28 19:15 python -> /usr/bin/python
-```
+> [!Code] Shell
+> ```bash
+> # 'ce' command is from cerium, my ls-like command-line utility (currently private). 
+> # Replacing 'ce' with 'ls' should work all the same.
+>
+> ce -la ~/.venv/bin/python
+>
+> lrwxrwxrwx@ 15 rly0nheart Jul 28 19:15 python -> /usr/bin/python
+> ```
 
 Between July and now, I received a number of system updates, which also upgraded Python to 3.14 (the latest, as of writing). Since the venv's Python was symlinked to the system Python, the venv's version "changed" without me touching it:
 
-```bash
-# On the host system
-/usr/bin/python --version
-
-Python 3.14.2
-```
+> [!Code] Shell
+> ```bash
+> # On the host system
+> /usr/bin/python --version
+>
+> Python 3.14.2
+> ```
 
 So the timeline was:
 1. **July**: Created `~/.venv` → pointed to `/usr/bin/python` (which was Python 3.13 at the time)
@@ -87,13 +91,14 @@ This created a version mismatch nightmare where:
 
 The fix was simple, remove or rename the global venv:
 
-```bash
-# Remove the global venv from your home directory
-mv ~/.venv ~/.venv.backup
-
-# Or delete it entirely if you don't need it
-rm -rf ~/.venv
-```
+> [!Code] Shell
+> ```bash
+> # Remove the global venv from your home directory
+> mv ~/.venv ~/.venv.backup
+>
+> # Or delete it entirely if you don't need it
+> rm -rf ~/.venv
+> ```
 
 After removing the global venv:
 1. PyCharm could finally detect project venvs properly

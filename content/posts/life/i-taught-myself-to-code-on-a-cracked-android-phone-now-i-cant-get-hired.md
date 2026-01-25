@@ -7,6 +7,14 @@ categories:
   - Life
 ---
 
+> [!NOTE] Thanks
+> Thanks to everyone for reading and the attention to this, it's really encouraging.
+
+> [!DANGER] Watch out!
+> Please be careful about any fundraising page in my name (**with crypto wallets**), they're a scammer impersonating me by name-squatting my defunct handles on [**About.me**](https://about.me/rly0nheart), [**X/Twitter**](https://x.com/rly0nheart), and something called [**Coindrop**](https://coindrop.to/rly0nheart). Those accounts **ARE NOT MINE**, they're owned by someone attempting to scam people using my name and face. 
+> My verified profiles are on [Gravatar.com](https://gravatar.com/rly0nheart) **and at the bottom of this website.**
+> But please do contact me if my profile is of interest, and thanks for the warm wishes!
+
 
 I come across a fair number of people who ask me how I learned to code. They usually say something like, "which college/university did you study from?" assuming I went to college or university. But that's not what happened. You see, **I never went to college or university. I've never even been to high school. I taught myself to code on an Android phone with a cracked screen.** I know, this probably sounds like an exaggeration, but it's not.
 
@@ -121,19 +129,6 @@ The emergence of LLMs and AI coding agents makes me feel even worse about it all
 I don't want to sound entitled, but it's hard not to feel discouraged. For self-taught developers, it feels like all that effort might not matter anymore. Not because we're not good enough, but because companies see an LLM as cheaper and easier than taking a chance on unconventional candidates. And for developers who did everything 'right', went to university, got the credentials, built their careers, many are being laid off and replaced by AI tools. If even they are being filtered out despite having everything the system asked for, what chance does anyone outside the traditional path have? It feels like the bar keeps moving, and not in a way that rewards actual ability.
 
 I know some of this might sound bitter. Maybe it is. But it comes from real experiences. Countless rejections without explanation, watching companies choose candidates with degrees over candidates with proof, never even getting to the interview stage despite having the skills they're asking for. This isn't about one bad experience or one unlucky break. It's about a pattern I've lived through repeatedly, and I needed to say it out loud.
-
----
-
-## Important Note:
-
-Thanks everyone for reading and the attention to this, it's really encouraging.
-
-**Meanwhile just a warning**: please be careful about any fundraising page in my name (**with crypto wallets**), they're a scammer impersonating me by name-squatting my defunct handles on [**About.me**](https://about.me/rly0nheart), [**X/Twitter**](https://x.com/rly0nheart), and something called [**Coindrop**](https://coindrop.to/rly0nheart). Those accounts **ARE NOT MINE**, they're owned by someone attempting to scam people using my name and face.
-
-
-**My verified profiles are on** [Gravatar.com](https://gravatar.com/rly0nheart) **and at the bottom of this website.**
-
-But please do contact me if my profile is of interest, and thanks for the warm wishes!
 
 
 [^1]: I actually left that school with a balance of K220 (roughly $10). The school permanently closed around 3 - 4 years after I dropped out.

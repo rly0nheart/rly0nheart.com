@@ -91,7 +91,8 @@ I started writing the code, and I noticed the following:
 
 The strange part? My scripts would actually *run* successfully. So, the packages existed in the venv, but the editor was completely blind to it.
 
-**For the record**, I haven't had this issue with Rust Rover. I simply just enter a Silverblue toolbox where I installed cargo, then I can run all cargo commands without a problem, and linting works just fine.
+> [!Note]
+> I haven't had this issue with Rust Rover. I simply just enter a Silverblue toolbox where I installed cargo, then I can run all cargo commands without a problem, and linting works just fine.
 
 ---
 
@@ -106,36 +107,38 @@ My initial thought was that this was a Silverblue immutability issue. I had PyCh
 
 I removed all traces of JetBrains from my host:
 
-```bash
-# Killed running processes (as it was still running)
-pkill -f jetbrains-toolbox
-
-# Removed all data
-rm -rf ~/.local/share/JetBrains
-rm -rf ~/.config/JetBrains
-rm -rf ~/.cache/JetBrains
-rm -f ~/.local/share/applications/jetbrains*.desktop
-rm -rf ~/Downloads/jetbrains-toolbox-*
-```
+> [!Code] Shell
+> ```bash
+> # Killed running processes (as it was still running)
+> pkill -f jetbrains-toolbox
+>
+> # Removed all data
+> rm -rf ~/.local/share/JetBrains
+> rm -rf ~/.config/JetBrains
+> rm -rf ~/.cache/JetBrains
+> rm -f ~/.local/share/applications/jetbrains*.desktop
+> rm -rf ~/Downloads/jetbrains-toolbox-*
+> ```
 
 ### Setting Up in Toolbox
 
 Then I moved everything into my toolbox (I call mine "sandbox"):
 
-```bash
-# Entered my toolbox
-toolbox enter sandbox
-
-# Installed dependencies
-sudo dnf install -y fuse fuse-libs python3 python3-pip python3-virtualenv python3-devel git
-
-# Downloaded JetBrains Toolbox (as of writing, the latest version is 3.2.0.65851)
-cd ~/Downloads
-wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.2.0.65851.tar.gz
-tar -xzf jetbrains-toolbox-*.tar.gz
-cd jetbrains-toolbox-*/bin
-./jetbrains-toolbox
-```
+> [!Code] Shell
+> ```bash
+> # Entered my toolbox
+> toolbox enter sandbox
+>
+> # Installed dependencies
+> sudo dnf install -y fuse fuse-libs python3 python3-pip python3-virtualenv python3-devel git
+>
+> # Downloaded JetBrains Toolbox (as of writing, the latest version is 3.2.0.65851)
+> cd ~/Downloads
+> wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.2.0.65851.tar.gz
+> tar -xzf jetbrains-toolbox-*.tar.gz
+> cd jetbrains-toolbox-*/bin
+> ./jetbrains-toolbox
+> ```
 
 I installed PyCharm and Rust Rover through the Toolbox App and pinned them to my dock for easy access.
 
@@ -168,13 +171,14 @@ On traditional Linux distributions like Ubuntu, you don't have this host/contain
 
 The fix was surprisingly simple. **All I had to do was delete the .venv directory in my project's root, and then create a fresh venv through PyCharm:**
 
-```bash
-# Opened terminal and moved to the path of project
-cd ~/PyCharmMiscProjects
-
-# Delete the existing .venv directory
-rm -rf .venv
-```
+> [!Code] Shell
+> ```bash
+> # Opened terminal and moved to the path of project
+> cd ~/PyCharmMiscProjects
+>
+> # Delete the existing .venv directory
+> rm -rf .venv
+> ```
 
 Then, in the bottom right of my PyCharm, I clicked on the interpreter name `Python 3.13 (PyCharmMiscProjects)`, then I proceeded to click on `Add New Interpreter` → `Add Local Interpreter`.
 
@@ -213,12 +217,13 @@ Imports were recognised, linting worked, Black formatter was available, and the 
 
 If you're experiencing similar issues, here's how to diagnose:
 
-```bash
-# In PyCharm's terminal, check what Python you're actually using
-which python
-python --version
-pip list
-```
+> [!Code] Shell
+> ```bash
+> # In PyCharm's terminal, check what Python you're actually using
+> which python
+> python --version
+> pip list
+> ```
 
 Then compare that with what's shown in **Settings → Project → Python Interpreter**. If they don't match, that's your problem.
 
