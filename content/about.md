@@ -9,15 +9,7 @@ I'm a Software Engineer from [**Zambia**](https://en.wikipedia.org/wiki/Zambia),
 
 I've worked as an Investigative Tech Fellow and Software Developer at Bellingcat, and as a Software Developer at OSINT For Ukraine. These days I do contract work as a Software Engineer, mostly for people and organisations doing interesting things with data.
 
-## Programming Languages I Work With 
+If you have any questions or want to chat about any of the [topics here](/categories), feel free to reach out.
 
-- **Python**
-- **Rust**
-- **JavaScript**
-- **HTML** (I know, Markup language, not Programming language)
-
-
-> [!Warning]
+> [!Note]
 > I only have accounts on the platforms listed on my [Gravatar](https://gravatar.com/rly0nheart) profile, and only the profiles those links point to are mine. If a platform isn't listed there, or if any of the links don't connect to an actual profile, then it's not me (especially if it's something asking you to send money through crypto).
-
-If you have any questions or want to chat about any of the [**topics**](/categories) here, feel free to reach out.

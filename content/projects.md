@@ -3,24 +3,22 @@ title: Projects
 layout: default
 ---
 
-* `public` [**actual**](https://codeberg.org/rly0nheart/actual) : *File carving tool for forensic image recovery.*
+* [**actual**](https://codeberg.org/rly0nheart/actual): *File carving tool for forensic image recovery.*
 
-* `private` [**cerium**](https://codeberg.org/rly0nheart/cerium) : *Yet, another ls-like util that is not trying to replace ls*
+* [**cerium**](https://codeberg.org/rly0nheart/cerium): *Yet, another ls-like util that is not trying to replace ls*
 
-* `public` [**humanly**](https://crates.io/crates/humanly): *A pure Rust crate to convert numbers, sizes, durations, times, and percentages into human-readable formats*
+* [**humanly**](https://crates.io/crates/humanly): *A pure Rust crate to convert numbers, sizes, durations, times, and percentages into human-readable formats*
 
-* `public archive` [**knewkarma**](https://pypi.org/project/knewkarma): *Zero-auth toolkit for Reddit data analysis.*
+* [**knewkarma**](https://pypi.org/project/knewkarma): *Zero-auth toolkit for Reddit data analysis.*
 
-* `public` [**octosuite**](https://pypi.org/project/octosuite): *Terminal-based toolkit for GitHub data analysis.*
+* [**octosuite**](https://pypi.org/project/octosuite): *Terminal-based toolkit for GitHub data analysis.*
 
-* `public archive` [**oxdork**](https://pypi.org/project/oxdork): *Google dorking tool*
+* [**oxdork**](https://pypi.org/project/oxdork): *Google dorking tool*
 
-* `public` [**pyahmia**](https://pypi.org/project/pyahmia): *Search hidden services on the Tor network* 
+* [**pyahmia**](https://pypi.org/project/pyahmia): *Search hidden services on the Tor network* 
 
-* `private` [**sandra**](https://codeberg.org/rly0nheart/Sandra): *An elegant SSE-powered Azuracast Radio Player*
+* [**searchcode-python**](https://pypi.org/project/searchcode): *Python SDK and CLI utility for searchcode.com.*
 
-* `public` [**searchcode-python**](https://pypi.org/project/searchcode): *Python SDK and CLI utility for searchcode.com.*
-
-* `public` [**updates-rs**](https://crates.io/crates/updates): *A Rust library that checks for crate updates.*
+* [**updates-rs**](https://crates.io/crates/updates): *A Rust library that checks for crate updates.*
 
 
