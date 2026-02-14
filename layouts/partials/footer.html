@@ -1,5 +1,19 @@
 <footer id="main-footer">
 <hr />
+<!-- Action bar for subscribe and theme -->
+<div class="footer-action-bar">
+  <div class="footer-action-content">
+    <div class="action-subscribe-form">
+      <form action="https://api.follow.it/subscription-form/S1BkWDJHeHpXSXZWRFFkRENHOVI3MmR3OE55YitUS2FKT1dDbUNidndEUTUvb3ZBUlEwbkI4Y3Z6MU5pTGNWVVo5WHpVMElJYytoOVRoa0FKekJaZlQzNzd1UUVyVjFqZUx6Y2ovNEZoR0EwSyt4RnFSU2JCOVN2NDh1RGVGdDd8VWhHQkw3L2l0VjJUcjgyZ1Q3M240ZlZJaS8zSlUrVzBQNjlKQ0VNS3V2WT0=/8" method="post">
+        <input type="email" name="email" required placeholder="your@email.com" spellcheck="false">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="action-buttons">
+      <button class="theme-toggle action-button" aria-label="Toggle theme"></button>
+    </div>
+  </div>
+</div>
   {{ if .Site.Params.social }}
 <p id="social">
     Find me around the web:

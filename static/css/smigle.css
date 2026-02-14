@@ -1,6 +1,3 @@
-/* ============================================
-   ROOT CONTAINER
-   ============================================ */
 /* Main content container with centered layout */
 #root {
   font-family: Iosevka, monospace !important;
@@ -10,9 +7,6 @@
   transition: all 0.1s ease-in-out;
 }
 
-/* ============================================
-   BRAND SECTION
-   ============================================ */
 /* Brand container with logo and text */
 #brand {
   display: flex;
@@ -44,9 +38,6 @@
   width: 75px;
 }
 
-/* ============================================
-   HEADER & FOOTER
-   ============================================ */
 /* Footer spacing */
 footer {
   margin-top: 30px;
@@ -57,9 +48,6 @@ header nav {
   margin: 15px 0;
 }
 
-/* ============================================
-   POST TITLES & METADATA
-   ============================================ */
 /* Post title styling */
 h1.title {
   margin: 1.3rem 0 0 0;
@@ -102,9 +90,6 @@ article:not(.summary) .content > p:first-child:first-letter {
   clear: left;
 }
 
-/* ============================================
-   RESPONSIVE: TABLET & DESKTOP
-   ============================================ */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* Add top margin to root container */
@@ -135,9 +120,6 @@ article:not(.summary) .content > p:first-child:first-letter {
   }
 }
 
-/* ============================================
-   POSTS LIST
-   ============================================ */
 /* Posts list by date */
 #postsByDate {
   list-style: none;
@@ -154,9 +136,6 @@ article:not(.summary) .content > p:first-child:first-letter {
   display: inline-block;
 }
 
-/* ============================================
-   TERMS/TAGS
-   ============================================ */
 /* Terms list container */
 #terms {
   list-style: outside !important;
@@ -164,17 +143,9 @@ article:not(.summary) .content > p:first-child:first-letter {
 
 /* Individual term/tag styling */
 #terms .term {
-  /*background-color: var(--dimcolor);
-  border-radius: 3px;
-  display: inline-block;
-  margin: 2px;
-  padding: 8px;*/
   list-style-type: disc !important;
 }
 
-/* ============================================
-   NAVIGATION EXPANSION
-   ============================================ */
 /* Mobile-first: hide extra navigation items by default */
 header nav .nav-extra {
   display: none;
@@ -243,13 +214,10 @@ footer.expanded .social-extra {
   }
 }
 
-/* ============================================
-   HEADER BUTTONS (THEME TOGGLE, SUBSCRIBE)
-   ============================================ */
 /* Header positioning for absolute buttons */
 header {
   position: relative;
-  padding-top: 40px; /* Make room for buttons */
+  padding-top: 40px;
 }
 
 /* Container for header buttons */
@@ -259,7 +227,7 @@ header {
   width: 100%;
   z-index: 100;
   display: flex;
-  justify-content: flex-end; /* Align buttons to the right by default */
+  justify-content: flex-end;
 }
 
 /* General header button styling */
@@ -281,9 +249,6 @@ header {
   transition: all 0.2s ease-in-out !important;
 }
 
-/* ============================================
-   RESPONSIVE: MOBILE ADJUSTMENTS
-   ============================================ */
 @media (max-width: 767px) {
   /* Center navigation on mobile */
   #main-nav {
@@ -299,13 +264,10 @@ header {
   .header-buttons {
     top: 5px;
     width: 100%;
-    justify-content: space-between; /* One left, one right */
+    justify-content: space-between;
   }
 }
 
-/* ============================================
-   RESPONSIVE: DESKTOP ADJUSTMENTS
-   ============================================ */
 @media (min-width: 768px) {
   /* Desktop: Align both buttons to the right */
   .header-buttons {
@@ -318,9 +280,6 @@ header {
   }
 }
 
-/* ============================================
-   BUTTON SPACING ADJUSTMENTS
-   ============================================ */
 /* Left button spacing (mainly for mobile) */
 .header-button:first-child {
   margin-left: 10px;
