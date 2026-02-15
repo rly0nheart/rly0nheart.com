@@ -119,7 +119,7 @@ For now, it's home. For however long it lasts.
 
 
 > [!Warning] Back to reality, the year is 2026
-> This was one way I think it could go if companies actually manage to replace their entire human workforce with AI. What's the worst that could happen?
+> This is one way I think it could go if companies actually manage to replace their entire human workforce with AI. What's the worst that could happen?
 >
 > There are other ways it plays out. Maybe governments regulate in time. Maybe companies realise that workers aren't just costs on a spreadsheet. Maybe AI never gets good enough to fully replace humans and remains a tool instead of a replacement.
 >
