@@ -25,15 +25,4 @@ src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
 <script>
     (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='text-decoration:underline;pointer-events:none'})})();
 </script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-const button = document.getElementById('subscribe-button');
-const popup = document.getElementById('subscribe-popup');
-if (button && popup) {
-button.addEventListener('click', function() {
-popup.classList.add('active');
-            });
-        }
-    });
-</script>
 </header>

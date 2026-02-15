@@ -28,7 +28,7 @@
   padding: 6px 12px;
   border: 1px solid var(--fontcolor);
   font-family: inherit;
-  font-size: 14px;
+  font-size: inherit;
   background: var(--dimcolor);
   color: var(--fontcolor);
   flex: 1;
@@ -59,7 +59,7 @@
   background: var(--fontcolor);
   color: var(--bgcolor);
   cursor: pointer;
-  font-size: 14px;
+  font-size: inherit;
   font-family: inherit;
   font-weight: normal;
   line-height: normal;
@@ -80,7 +80,7 @@
   background: var(--fontcolor);
   color: var(--bgcolor);
   cursor: pointer;
-  font-size: 14px;
+  font-size: inherit;
   font-family: inherit;
   font-weight: normal;
   line-height: normal;
@@ -130,13 +130,13 @@ header .header-buttons {
     min-width: 0;
     width: auto !important;
     padding: 6px 8px;
-    font-size: 13px;
+    font-size: inherit;
   }
 
   /* Smaller submit button on mobile */
   .action-subscribe-form button[type="submit"] {
     padding: 6px 8px;
-    font-size: 13px;
+    font-size: inherit;
     white-space: nowrap;
   }
 
@@ -148,6 +148,6 @@ header .header-buttons {
   /* Smaller theme button on mobile */
   .action-button {
     padding: 6px 8px;
-    font-size: 13px !important;
+    font-size: inherit !important;
   }
 }
