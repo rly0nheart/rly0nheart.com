@@ -119,14 +119,8 @@ For now, it's home. For however long it lasts.
 
 
 > [!Warning] Back to reality, the year is 2026
-> This is probably one of many ways things could go badly if we decided to rely on an all-AI workforce over humans.
-> 
-> There are other futures where this doesn’t happen. Where governments regulate AI deployment before mass unemployment hits. Where companies realise they need customers to have income. Where we figure out wealth redistribution before everything collapses. Where the technology just never gets good enough to replace humans at scale. Where AI remains a tool that helps with human work rather than replaces it entirely.
+> This was one way I think it could go if companies actually manage to replace their entire human workforce with AI. What's the worst that could happen?
 >
-> The reality is that we don’t even need evil masterminds for this scenario to play out. We just need:
+> There are other ways it plays out. Maybe governments regulate in time. Maybe companies realise that workers aren't just costs on a spreadsheet. Maybe AI never gets good enough to fully replace humans and remains a tool instead of a replacement.
 >
-> Short-term incentives. Hype and fear of missing out. Herd behaviour. Technology that’s good enough to be convincing but not good enough to actually work.
->
-> We’ve seen this pattern before. [The Great Depression](https://en.wikipedia.org/wiki/Great_Depression) in 1929. [The Asian Financial Crisis](https://en.wikipedia.org/wiki/1997_Asian_financial_crisis) in 1997. [The 2008 financial meltdown](https://en.wikipedia.org/wiki/2007%E2%80%932008_financial_crisis). Every economic bubble. Entire industries run into the ground by people who missed what was happening, or saw it coming but couldn’t stop the momentum.
->
-> I don’t know if we’ll learn. But I think about it more than I probably should.
+> But you don't need conspiracies for the bad version to play out. Just short-term thinking, hype, and tech that seems good enough until it isn't.
