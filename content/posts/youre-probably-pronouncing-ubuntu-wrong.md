@@ -23,4 +23,4 @@ Next time you say it, just soften the "b." That's it.
 If you want to learn more about the word itself, here's the [Wikipedia article on Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_philosophy).
 
 [^1]: I learnt it's pronounced "ma-NYA-na" from the  [Spice Girls' *Viva Forever*](https://open.spotify.com/track/6BPDPcnbDMDf58srVzbfX9?si=48267f7978b34d4c). Specifically, the "hasta mañana" line.
-[^2]: Knowing this is also how "b" works in Spanish got me real confident singing the only lines I know from [Johnny Ventura's *Tiene Sabor*](https://open.spotify.com/track/7lTsTREZn7J3fsJWxCeEJZ?si=0bba0484955e4ef4): "Chupa la caña, nena. Tiene sabor, sabor, sabor, y nada más." Then I found out the entire line is pretty suggestive... so I continued singing it.
+[^2]: Knowing this is also how "b" works in Spanish got me real confident singing the only lines I know from [Johnny Ventura's *Tiene Sabor*](https://open.spotify.com/track/7lTsTREZn7J3fsJWxCeEJZ?si=0bba0484955e4ef4): "Chupa la caña, negra. Tiene sabor, sabor, sabor, y nada más." Then I found out the entire line is pretty suggestive... so I continued singing it.
