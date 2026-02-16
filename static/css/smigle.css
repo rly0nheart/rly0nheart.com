@@ -70,26 +70,6 @@ div.post-meta {
   margin-top: 1.3rem;
 }
 
-/* First letter of article styled as drop cap (single article only, not summaries) */
-article:not(.summary) .content > p:first-child:first-letter {
-  color: var(--fontcolor);
-  float: left;
-  font-weight: bold;
-  font-size: 70px;
-  line-height: 20px;
-  padding-top: 4px;
-}
-
-/* Clear float on headings so they don't wrap around drop cap */
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
-  clear: left;
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* Add top margin to root container */
