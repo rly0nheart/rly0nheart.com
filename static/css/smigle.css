@@ -1,271 +1,361 @@
+:root {
+  --root-font-family: Iosevka, monospace;
+  --root-max-width: 750px;
+  --root-margin: 0 auto;
+  --root-padding: 10px;
+  --root-transition: all 0.1s ease-in-out;
+  --root-margin-top-desktop: 25px;
+
+  --brand-display: flex;
+  --brand-direction: column;
+  --brand-direction-desktop: row;
+  --brand-align: center;
+  --brand-text-align: center;
+  --brand-text-align-desktop: unset;
+  --brand-heading-margin: 0;
+  --brand-title-size: 30px;
+  --brand-title-size-desktop: 45px;
+  --brand-subtitle-size: 15px;
+  --brand-subtitle-size-desktop: 18px;
+  --brand-subtitle-weight: normal;
+  --brand-icon-width: 75px;
+  --brand-text-margin-desktop: 10px;
+
+  --footer-margin-top: 30px;
+  --nav-margin: 15px 0;
+
+  --post-title-margin: 1.3rem 0 0 0;
+  --post-title-display: inline-flex;
+  --post-title-hover-decoration: underline;
+  --post-subtitle-weight: normal;
+  --post-subtitle-margin: 0;
+  --post-meta-margin-top: 1.3rem;
+
+  --posts-list-style: none;
+  --posts-date-width: 60px;
+  --posts-item-display: inline-block;
+
+  --terms-list-style: outside;
+  --terms-item-list-style: disc;
+
+  --nav-extra-display: none;
+  --nav-extra-display-expanded: inline;
+  --nav-extra-display-desktop: inline;
+
+  --expand-toggle-bg: none;
+  --expand-toggle-border: none;
+  --expand-toggle-cursor: pointer;
+  --expand-toggle-font-family: inherit;
+  --expand-toggle-font-size: inherit;
+  --expand-toggle-font-weight: bold;
+  --expand-toggle-padding: 0;
+  --expand-toggle-margin: 0 5px;
+  --expand-toggle-decoration: none;
+  --expand-toggle-hover-filter: brightness(1.5);
+  --expand-toggle-hover-transition: all 0.1s ease-in-out;
+  --expand-toggle-display-desktop: none;
+
+  --theme-toggle-transition: transform 0.3s ease;
+  --theme-toggle-spin-animation: spin 0.5s ease-in-out;
+  --theme-toggle-spin-from: rotate(0deg);
+  --theme-toggle-spin-to: rotate(360deg);
+
+  --header-position: relative;
+  --header-padding-top: 40px;
+  --header-padding-top-mobile: 35px;
+
+  --header-buttons-position: absolute;
+  --header-buttons-top: 10px;
+  --header-buttons-top-mobile: 5px;
+  --header-buttons-width: 100%;
+  --header-buttons-z-index: 100;
+  --header-buttons-display: flex;
+  --header-buttons-justify: flex-end;
+  --header-buttons-justify-mobile: space-between;
+
+  --header-button-bg: none;
+  --header-button-border: none;
+  --header-button-cursor: pointer;
+  --header-button-font-family: inherit;
+  --header-button-font-size: 18px;
+  --header-button-font-weight: bold;
+  --header-button-padding: 0;
+  --header-button-decoration: none;
+  --header-button-hover-filter: brightness(1.5);
+  --header-button-hover-transition: all 0.2s ease-in-out;
+  --header-button-spacing: 10px;
+
+  --mobile-nav-text-align: center;
+}
+
 /* Main content container with centered layout */
 #root {
-  font-family: Iosevka, monospace !important;
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 10px;
-  transition: all 0.1s ease-in-out;
+  font-family: var(--root-font-family) !important;
+  max-width: var(--root-max-width);
+  margin: var(--root-margin);
+  padding: var(--root-padding);
+  transition: var(--root-transition);
 }
 
 /* Brand container with logo and text */
 #brand {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  display: var(--brand-display);
+  flex-direction: var(--brand-direction);
+  align-items: var(--brand-align);
+  text-align: var(--brand-text-align);
 }
 
 /* Brand headings reset */
 #brand h1,
 #brand h3 {
-  margin: 0;
+  margin: var(--brand-heading-margin);
 }
 
 /* Main brand title */
 #brand h1 {
-  font-size: 30px;
+  font-size: var(--brand-title-size);
 }
 
 /* Brand subtitle/tagline */
 #brand h3 {
-  font-size: 15px;
+  font-size: var(--brand-subtitle-size);
   color: var(--visitedcolor);
-  font-weight: normal;
+  font-weight: var(--brand-subtitle-weight);
 }
 
 /* Brand icon/logo size */
 #brand .icon {
-  width: 75px;
+  width: var(--brand-icon-width);
 }
 
 /* Footer spacing */
 footer {
-  margin-top: 30px;
+  margin-top: var(--footer-margin-top);
 }
 
 /* Header navigation spacing */
 header nav {
-  margin: 15px 0;
+  margin: var(--nav-margin);
 }
 
 /* Post title styling */
 h1.title {
-  margin: 1.3rem 0 0 0;
-  display: inline-flex;
+  margin: var(--post-title-margin);
+  display: var(--post-title-display);
 }
 
 /* Post title hover effect */
 a:hover h1.title {
-  text-decoration: underline;
+  text-decoration: var(--post-title-hover-decoration);
 }
 
 /* Post subtitle styling */
 h3.subtitle {
-  font-weight: normal;
-  margin: 0;
+  font-weight: var(--post-subtitle-weight);
+  margin: var(--post-subtitle-margin);
 }
 
 /* Post metadata section */
 div.post-meta {
-  margin-top: 1.3rem;
+  margin-top: var(--post-meta-margin-top);
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* Add top margin to root container */
   #root {
-    margin-top: 25px;
+    margin-top: var(--root-margin-top-desktop);
   }
 
   /* Brand layout changes to horizontal */
   #brand {
-    flex-direction: row;
-    text-align: unset;
+    flex-direction: var(--brand-direction-desktop);
+    text-align: var(--brand-text-align-desktop);
   }
 
   /* Brand text spacing */
   #brand .text {
-    margin-left: 10px;
+    margin-left: var(--brand-text-margin-desktop);
   }
 
   /* Larger brand title on desktop */
   #brand h1 {
-    font-size: 45px;
+    font-size: var(--brand-title-size-desktop);
   }
 
   /* Larger brand subtitle on desktop */
   #brand h3 {
-    font-size: 18px;
+    font-size: var(--brand-subtitle-size-desktop);
     color: var(--visitedcolor);
   }
 }
 
 /* Posts list by date */
 #postsByDate {
-  list-style: none;
+  list-style: var(--posts-list-style);
 }
 
 /* Date column width in posts list */
 #postsByDate .date {
-  width: 60px;
+  width: var(--posts-date-width);
 }
 
 /* Inline display for post list items */
 #postsByDate div,
 #postsInOneGroup div {
-  display: inline-block;
+  display: var(--posts-item-display);
 }
 
 /* Terms list container */
 #terms {
-  list-style: outside !important;
+  list-style: var(--terms-list-style) !important;
 }
 
 /* Individual term/tag styling */
 #terms .term {
-  list-style-type: disc !important;
+  list-style-type: var(--terms-item-list-style) !important;
 }
 
 /* Mobile-first: hide extra navigation items by default */
 header nav .nav-extra {
-  display: none;
+  display: var(--nav-extra-display);
 }
 
 /* Mobile-first: hide extra social links by default */
 footer .social-extra {
-  display: none;
+  display: var(--nav-extra-display);
 }
 
 /* Expand/collapse toggle button */
 .expand-toggle {
-  background: none;
-  border: none;
+  background: var(--expand-toggle-bg);
+  border: var(--expand-toggle-border);
   color: var(--fontcolor);
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: bold;
-  padding: 0;
-  margin: 0 5px;
-  text-decoration: none;
+  cursor: var(--expand-toggle-cursor);
+  font-family: var(--expand-toggle-font-family);
+  font-size: var(--expand-toggle-font-size);
+  font-weight: var(--expand-toggle-font-weight);
+  padding: var(--expand-toggle-padding);
+  margin: var(--expand-toggle-margin);
+  text-decoration: var(--expand-toggle-decoration);
 }
 
 /* Expand toggle hover effect */
 .expand-toggle:hover {
-  filter: brightness(1.5);
-  transition: all 0.1s ease-in-out;
+  filter: var(--expand-toggle-hover-filter);
+  transition: var(--expand-toggle-hover-transition);
 }
 
 .theme-toggle {
-  transition: transform 0.3s ease;
+  transition: var(--theme-toggle-transition);
 }
 
 .theme-toggle.spin {
-  animation: spin 0.5s ease-in-out;
+  animation: var(--theme-toggle-spin-animation);
 }
 
 @keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: var(--theme-toggle-spin-from);
   }
   to {
-    transform: rotate(360deg);
+    transform: var(--theme-toggle-spin-to);
   }
 }
 
 /* Show extra items when expanded */
 header nav.expanded .nav-extra {
-  display: inline;
+  display: var(--nav-extra-display-expanded);
 }
 
 footer.expanded .social-extra {
-  display: inline;
+  display: var(--nav-extra-display-expanded);
 }
 
 /* On tablets and up, always show all items and hide toggle */
 @media (min-width: 768px) {
   header nav .nav-extra,
   footer .social-extra {
-    display: inline;
+    display: var(--nav-extra-display-desktop);
   }
 
   .expand-toggle {
-    display: none;
+    display: var(--expand-toggle-display-desktop);
   }
 }
 
 /* Header positioning for absolute buttons */
 header {
-  position: relative;
-  padding-top: 40px;
+  position: var(--header-position);
+  padding-top: var(--header-padding-top);
 }
 
 /* Container for header buttons */
 .header-buttons {
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  z-index: 100;
-  display: flex;
-  justify-content: flex-end;
+  position: var(--header-buttons-position);
+  top: var(--header-buttons-top);
+  width: var(--header-buttons-width);
+  z-index: var(--header-buttons-z-index);
+  display: var(--header-buttons-display);
+  justify-content: var(--header-buttons-justify);
 }
 
 /* General header button styling */
 .header-button {
-  background: none;
-  border: none;
+  background: var(--header-button-bg);
+  border: var(--header-button-border);
   color: var(--fontcolor);
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 0;
-  text-decoration: none;
+  cursor: var(--header-button-cursor);
+  font-family: var(--header-button-font-family);
+  font-size: var(--header-button-font-size);
+  font-weight: var(--header-button-font-weight);
+  padding: var(--header-button-padding);
+  text-decoration: var(--header-button-decoration);
 }
 
 /* Header button hover effect */
 .header-button:hover {
-  filter: brightness(1.5) !important;
-  transition: all 0.2s ease-in-out !important;
+  filter: var(--header-button-hover-filter) !important;
+  transition: var(--header-button-hover-transition) !important;
 }
 
 @media (max-width: 767px) {
   /* Center navigation on mobile */
   #main-nav {
-    text-align: center;
+    text-align: var(--mobile-nav-text-align);
   }
 
   /* Reduce header padding on mobile */
   header {
-    padding-top: 35px;
+    padding-top: var(--header-padding-top-mobile);
   }
 
   /* Mobile: Spread buttons to opposite sides */
   .header-buttons {
-    top: 5px;
-    width: 100%;
-    justify-content: space-between;
+    top: var(--header-buttons-top-mobile);
+    width: var(--header-buttons-width);
+    justify-content: var(--header-buttons-justify-mobile);
   }
 }
 
 @media (min-width: 768px) {
   /* Desktop: Align both buttons to the right */
   .header-buttons {
-    justify-content: flex-end;
+    justify-content: var(--header-buttons-justify);
   }
 
   /* Add spacing between buttons on desktop */
   .header-button {
-    margin-left: 10px;
+    margin-left: var(--header-button-spacing);
   }
 }
 
 /* Left button spacing (mainly for mobile) */
 .header-button:first-child {
-  margin-left: 10px;
+  margin-left: var(--header-button-spacing);
 }
 
 /* Right button spacing (mainly for mobile) */
 .header-button:last-child {
-  margin-right: 10px;
+  margin-right: var(--header-button-spacing);
 }

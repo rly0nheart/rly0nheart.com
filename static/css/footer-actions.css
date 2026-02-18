@@ -1,0 +1,196 @@
+:root {
+  --footer-padding: 6px 12px;
+  --footer-padding-mobile: 6px 8px;
+  --footer-transition: all 0.2s ease;
+  --footer-transition-hover: all 0.1s ease-in-out;
+  --footer-bar-padding: 15px 0;
+  --footer-bar-margin: 20px;
+  --footer-gap: 8px;
+  --footer-gap-mobile: 6px;
+  --footer-controls-gap: 15px;
+  --footer-btn-border: 1px solid #555;
+  --footer-focus-border: #888;
+  --footer-wrapper-border: 1px solid var(--fontcolor);
+  --footer-wrapper-transition: border-color 0.2s ease;
+  --footer-input-bg: color-mix(in srgb, var(--bgcolor) 85%, var(--fontcolor) 15%);
+  --footer-input-bg-focus: color-mix(in srgb, var(--bgcolor) 70%, var(--fontcolor) 30%);
+  --header-padding-top: 20px;
+  --footer-flex-grow: 1;
+  --footer-min-width: 0;
+  --footer-flex-shrink: 0;
+  --footer-form-width: 100%;
+  --footer-input-width: auto;
+  --footer-display: flex;
+  --footer-align-items: center;
+  --footer-align-items-stretch: stretch;
+  --footer-border-none: none;
+  --footer-font-family: inherit;
+  --footer-font-size: inherit;
+  --footer-cursor: pointer;
+  --footer-font-weight: normal;
+  --footer-line-height: normal;
+  --footer-white-space: nowrap;
+  --footer-outline: none;
+  --footer-position: relative;
+  --footer-display-none: none;
+}
+
+/* Container for the action bar in footer */
+.footer-action-bar {
+  padding: var(--footer-bar-padding);
+  margin-bottom: var(--footer-bar-margin);
+}
+
+/* Flexbox container to hold form and buttons */
+.footer-action-content {
+  display: var(--footer-display);
+  align-items: var(--footer-align-items);
+  gap: var(--footer-gap);
+}
+
+/* Form layout */
+.subscribe-form {
+  flex: var(--footer-flex-grow);
+  min-width: var(--footer-min-width);
+}
+
+.subscribe-form form {
+  display: var(--footer-display);
+  align-items: var(--footer-align-items);
+}
+
+/* Wrapper — outer border only, no background */
+.subscribe-input-wrapper {
+  display: var(--footer-display);
+  align-items: var(--footer-align-items-stretch);
+  border: var(--footer-wrapper-border);
+  flex: var(--footer-flex-grow);
+  min-width: var(--footer-min-width);
+  transition: var(--footer-wrapper-transition);
+}
+
+.subscribe-input-wrapper:focus-within {
+  border-color: var(--footer-focus-border);
+}
+
+/* Email input — subtle tint background, no border */
+.subscribe-form input[type="email"] {
+  padding: var(--footer-padding);
+  border: var(--footer-border-none);
+  font-family: var(--footer-font-family);
+  font-size: var(--footer-font-size);
+  background: var(--footer-input-bg);
+  color: var(--fontcolor);
+  flex: var(--footer-flex-grow);
+  min-width: var(--footer-min-width);
+  transition: var(--footer-transition);
+}
+
+.subscribe-form input[type="email"]:focus {
+  outline: var(--footer-outline);
+  background: var(--footer-input-bg-focus);
+}
+
+/* Submit button — no borders at all */
+.subscribe-form button[type="submit"] {
+  padding: var(--footer-padding);
+  border: var(--footer-border-none);
+  background: var(--fontcolor);
+  color: var(--bgcolor);
+  cursor: var(--footer-cursor);
+  font-size: var(--footer-font-size);
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  line-height: var(--footer-line-height);
+  transition: var(--footer-transition);
+  white-space: var(--footer-white-space);
+}
+
+/* Container for action buttons (theme toggle, subscribe) */
+.theme-controls {
+  display: var(--footer-display);
+  gap: var(--footer-controls-gap);
+  align-items: var(--footer-align-items);
+}
+
+/* Theme toggle button */
+.theme-toggle-btn {
+  padding: var(--footer-padding);
+  border: var(--footer-btn-border);
+  background: var(--fontcolor);
+  color: var(--bgcolor);
+  cursor: var(--footer-cursor);
+  font-size: var(--footer-font-size);
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  line-height: var(--footer-line-height);
+  transition: var(--footer-transition);
+}
+
+/* Hover state for both buttons */
+.theme-toggle-btn:hover,
+.subscribe-form button:hover {
+  color: var(--fontcolor);
+  background: var(--dimcolor);
+  transition: var(--footer-transition-hover);
+}
+
+/* Remove old header button spacing */
+header {
+  position: var(--footer-position);
+  padding-top: var(--header-padding-top) !important;
+}
+
+/* Hide header buttons from old location */
+header .header-buttons {
+  display: var(--footer-display-none) !important;
+}
+
+
+@media (max-width: 767px) {
+  /* Tighter spacing on mobile */
+  .footer-action-content {
+    gap: var(--footer-gap-mobile);
+  }
+
+  /* Subscribe form takes available space */
+  .subscribe-form {
+    flex: var(--footer-flex-grow);
+    min-width: 0;
+  }
+
+  .subscribe-form form {
+    width: var(--footer-form-width);
+  }
+
+  .subscribe-input-wrapper {
+    flex: var(--footer-flex-grow);
+    min-width: 0;
+  }
+
+  /* Email input flexes to fill space */
+  .subscribe-form input[type="email"] {
+    flex: var(--footer-flex-grow);
+    min-width: 0;
+    width: var(--footer-input-width) !important;
+    padding: var(--footer-padding-mobile);
+    font-size: var(--footer-font-size);
+  }
+
+  /* Smaller submit button on mobile */
+  .subscribe-form button[type="submit"] {
+    padding: var(--footer-padding-mobile);
+    font-size: var(--footer-font-size);
+  }
+
+  /* Action buttons don't shrink */
+  .theme-controls {
+    flex-shrink: var(--footer-flex-shrink);
+  }
+
+  /* Smaller theme button on mobile */
+  .theme-toggle-btn {
+    padding: var(--footer-padding-mobile);
+    font-size: inherit !important;
+  }
+}

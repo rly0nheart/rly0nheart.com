@@ -10,6 +10,27 @@ html {
   --visitedcolor: #928374;
   --precolor: #ebdbb2;
   --prebgcolor: #1d2021;
+
+  --body-margin: 0;
+  --link-decoration: none;
+  --link-hover-filter: brightness(1.5);
+  --link-hover-decoration: underline;
+  --link-hover-transition: all 0.1s ease-in-out;
+  --heading-line-height: 1.2;
+  --code-padding: 2px;
+  --pre-padding: 24px;
+  --pre-overflow: auto;
+  --article-padding: 5px 0;
+  --center-display: block;
+  --center-margin: auto;
+  --center-width: 100%;
+  --img-display: block;
+  --img-max-width: 100%;
+  --img-height: auto;
+  --figcaption-color: #928374;
+  --figcaption-font: 12px/1.5 monospace;
+  --figcaption-text-align: center;
+  --figure-margin: auto;
 }
 
 /* Light mode: swap light colors with dark colors */
@@ -38,11 +59,11 @@ html {
 body {
   color: var(--fontcolor);
   background: var(--bgcolor);
-  margin: 0;
+  margin: var(--body-margin);
 }
 
 a {
-  text-decoration: none;
+  text-decoration: var(--link-decoration);
 }
 
 a:link {
@@ -54,9 +75,9 @@ a:visited {
 }
 
 a:hover {
-  filter: brightness(1.5);
-  text-decoration: underline;
-  transition: all 0.1s ease-in-out;
+  filter: var(--link-hover-filter);
+  text-decoration: var(--link-hover-decoration);
+  transition: var(--link-hover-transition);
 }
 
 a:active {
@@ -66,45 +87,45 @@ a:active {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: var(--heading-line-height);
 }
 
 p > code {
   color: var(--precolor);
   background: var(--prebgcolor);
-  padding: 2px;
+  padding: var(--code-padding);
 }
 
 pre {
   color: var(--precolor);
   background: var(--prebgcolor);
-  padding: 24px;
-  overflow-x: auto;
+  padding: var(--pre-padding);
+  overflow-x: var(--pre-overflow);
 }
 
 article {
-  padding: 5px 0;
+  padding: var(--article-padding);
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  display: var(--center-display);
+  margin-left: var(--center-margin);
+  margin-right: var(--center-margin);
+  width: var(--center-width);
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  display: var(--img-display);
+  max-width: var(--img-max-width);
+  height: var(--img-height);
 }
 
 figcaption {
-  color: #928374;
-  font: 12px/1.5 monospace;
-  text-align: center;
+  color: var(--figcaption-color);
+  font: var(--figcaption-font);
+  text-align: var(--figcaption-text-align);
 }
 
 figure {
-  margin: auto;
+  margin: var(--figure-margin);
 }
