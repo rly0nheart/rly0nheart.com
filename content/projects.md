@@ -4,8 +4,8 @@ layout: default
 ---
 
 * [**actual**](https://codeberg.org/rly0nheart/actual): *File carving tool for forensic image recovery.*
-
-* [**cerium**](https://codeberg.org/rly0nheart/cerium): *Yet, another ls-like util that is not trying to replace ls*
+s
+* [**cerium**](https://codeberg.org/rly0nheart/cerium): *A lighter way to list files and directories.*
 
 * [**humanly**](https://crates.io/crates/humanly): *A pure Rust crate to convert numbers, sizes, durations, times, and percentages into human-readable formats*
 
