@@ -13,9 +13,9 @@ html {
 
   --body-margin: 0;
   --link-decoration: none;
-  --link-hover-filter: brightness(1.5);
-  --link-hover-decoration: underline;
-  --link-hover-transition: all 0.1s ease-in-out;
+  --link-hover-filter: none;
+  --link-hover-decoration: none;
+  --link-hover-transition: none;
   --heading-line-height: 1.2;
   --code-padding: 2px;
   --pre-padding: 24px;
@@ -64,6 +64,9 @@ body {
 
 a {
   text-decoration: var(--link-decoration);
+  padding: 2px 4px;
+  position: relative;
+  isolation: isolate;
 }
 
 a:link {
@@ -74,14 +77,25 @@ a:visited {
   color: var(--visitedcolor);
 }
 
-a:hover {
-  filter: var(--link-hover-filter);
-  text-decoration: var(--link-hover-decoration);
-  transition: var(--link-hover-transition);
+a:link:hover,
+a:visited:hover {
+  color: var(--bgcolor);
 }
 
-a:active {
-  color: var(--visitedcolor);
+a::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--fontcolor);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 h1,

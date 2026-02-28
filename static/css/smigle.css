@@ -144,9 +144,19 @@ h1.title {
   display: var(--post-title-display);
 }
 
-/* Post title hover effect */
+/* Post title link — block display so ::before covers full title */
+article.summary > a {
+  display: inline-block;
+  padding: 0;
+}
+
+article.summary > a > h1.title {
+  margin-top: 0;
+}
+
+/* Post title hover effect — handled by slide effect */
 a:hover h1.title {
-  text-decoration: var(--post-title-hover-decoration);
+  text-decoration: none;
 }
 
 /* Post subtitle styling */
