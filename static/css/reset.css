@@ -65,8 +65,12 @@ body {
 a {
   text-decoration: var(--link-decoration);
   padding: 2px 4px;
-  position: relative;
-  isolation: isolate;
+  background: linear-gradient(var(--fontcolor), var(--fontcolor)) no-repeat;
+  background-size: 0% 100%;
+  background-position: right;
+  transition: background-size 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 a:link {
@@ -82,20 +86,9 @@ a:visited:hover {
   color: var(--bgcolor);
 }
 
-a::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--fontcolor);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: -1;
-}
-
-a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
+a:hover {
+  background-position: left;
+  background-size: 100% 100%;
 }
 
 h1,

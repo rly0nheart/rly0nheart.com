@@ -8,11 +8,16 @@ tags:
 
 Today, Anthropic got banned by the US government. US President Donald Trump ordered every federal agency to stop using their tech. The Pentagon called them a "supply chain risk", which is a label they normally save for foreign enemies. All because Anthropic refused to let the military use their AI for mass surveillance and fully autonomous weapons.
 
+In [a statement](https://web.archive.org/web/20260226230402/https://www.anthropic.com/news/statement-department-of-war) by Dario Amodei, Anthropic's CEO, Amodei says:
+
+> [!Quote] Dario Amodei
+> We believe AI can undermine, rather than defend, democratic values. Some use cases are also simply outside the bounds of what todays's technology can safely and reliably do.
+
 I respect that. They walked away from a $200 million contract rather than give in to what sounds like dystopian demands. That takes guts. *George Orwell is probably doing backflips in his grave right now.*
 
-But there's a sentence in [their statement](https://web.archive.org/web/20260226230402/https://www.anthropic.com/news/statement-department-of-war) that has stuck with me.
+But there's a sentence in that statement that has stuck with me.
 
-> [!Quote]
+> [!Quote] Dario Amodei
 > "We believe that mass domestic surveillance **of Americans** constitutes a violation of fundamental rights."
 
 Of Americans.

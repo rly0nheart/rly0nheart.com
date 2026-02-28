@@ -147,7 +147,8 @@ h1.title {
 /* Post title link — block display so ::before covers full title */
 article.summary > a {
   display: inline-block;
-  padding: 0;
+  padding: 2px 4px;
+  margin: -2px -4px;
 }
 
 article.summary > a > h1.title {
