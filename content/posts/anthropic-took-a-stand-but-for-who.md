@@ -28,14 +28,20 @@ Not "of people." Not "of civilians." Of Americans.
 
 So what about non-Americans? What about people in Europe, Africa, Asia, South America, etc.? What about the billions of people who exist outside US borders? When Anthropic says mass surveillance goes against "fundamental rights," does that only count if you have an American passport?
 
-This isn't new though. When Snowden showed the world that the NSA was watching everyone on the planet, Americans got angry about the domestic part. The NSA was collecting data on millions of people in other countries and nobody in power really cared. Everyone else was just background noise.
+Amodei goes on to say:
 
-Anthropic's stand, as brave as it was, fits right into that same way of thinking. The "fundamental rights" they're fighting for come with a nationality check.
+> [!Quote] Dario Amodei
+> We support the use of AI for **lawful foreign intelligence** and counterintelligence missions. But using these systems for mass domestic surveillance is incompatible with democratic values. 
 
-Right now we're watching the rules for military AI get written. These deals between AI companies and the Pentagon will set the standard for years. And every company drawing "red lines" is only drawing them around Americans. Foreigners, people in other countries, the majority of the world's population, just don't come up.
+I'm not trying to downplay what Anthropic just did, this is huge! But what does "lawful foreign intelligence" look like?
+When Snowden showed the world that the NSA was watching everyone on the planet, the outrage focused almost entirely on the domestic part. The NSA was collecting data on millions of people in other countries, but that barely registered in the public debate. Everyone else was just background noise.
 
-Maybe they can't fight every fight. Fair enough. But let's not pretend that "fundamental rights" with a passport requirement are actually fundamental. Those are just privileges for the right people.
+Anthropic's stand, as brave as it was, seems to fit into that same way of thinking. If the "fundamental rights" they're fighting for only apply domestically, then they come with a nationality check.
 
-I'd like to hear Anthropic, or any AI company, say clearly whether their stance on mass surveillance covers non-Americans too. A straight answer would go a long way.
+Right now we're watching the rules for military AI get written. These deals between AI companies and the Pentagon will set the standard for years. And every company drawing "red lines" is only drawing them around domestic use. Everyone else, the majority of the world's population, just doesn't come up.
+
+Anthropic can't fight every fight. Fair enough. But the moment a "fundamental right" requires a specific passport to apply, it stops being fundamental. It becomes a policy, one that only protects the people who wrote it.
+
+I'd like to hear Anthropic, or any AI company, say clearly whether their stance on mass surveillance extends beyond US borders. A straight answer would go a long way.
 
 Until then, read the fine print. I think the word "Americans" is doing more work than you think.
