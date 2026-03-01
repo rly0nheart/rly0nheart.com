@@ -23,6 +23,6 @@ src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
 </nav>
 <hr/>
 <script>
-    (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='background:var(--fontcolor);color:var(--bgcolor);pointer-events:none'})})();
+    (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='color:var(--linkhovercolor);text-decoration:underline;pointer-events:none'})})();
 </script>
 </header>
