@@ -11,9 +11,6 @@ I've worked as an Investigative Tech Fellow and Software Developer at Bellingcat
 
 If you have any questions or want to chat about any of the [topics here](/categories), feel free to reach out.
 
-> [!Abstract] Note
-> The views expressed on this blog are my own and do not represent the views of my employer or any organisation I'm affiliated with.
-
 > [!Warning]
 > I only have accounts on the platforms listed on my [Gravatar](https://gravatar.com/rly0nheart) profile, and only the profiles those links point to are mine. If a platform isn't listed there, or if any of the links don't connect to an actual profile, then it's not me (especially if it's something asking you to send money through crypto).
 
