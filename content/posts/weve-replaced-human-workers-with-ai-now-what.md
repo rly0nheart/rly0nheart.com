@@ -1,6 +1,7 @@
 ---
 author: Ritchie
 date: 2026-02-15T10:00:00+02:00
+draft: true
 title: We've Replaced Human Workers with AI, Now What?
 tags:
   - AI

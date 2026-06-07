@@ -2,6 +2,7 @@
 author: Ritchie
 date: 2025-12-24T10:00:00+02:00
 title: PyCharm Venv Issues Continue
+draft: true
 subtitle: Global Venv Interference
 categories:
   - programming
