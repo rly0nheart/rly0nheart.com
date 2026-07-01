@@ -1,6 +1,6 @@
 ---
 author: Ritchie
-date: 2026-06-07T10:00:00+02:00
+date: 2026-07-07T21:00:00+02:00
 title: Gooeys (GUIs) Might Not Be My Thing
 categories:
   - programming
@@ -15,7 +15,7 @@ I'm starting to realise that I might not be very interested in building GUIs. Th
 
 Bear with me, this is not laziness :D. I love coding. But I've come to realise that I enjoy developing CLI, TUI or "barebones" apps way more than GUI apps, and I think I'm finally starting to understand why.
 
-I'm just not a great UX designer. When I'm working on a GUI or anything with visual styling involved, I always end up making it appealing to me, not to whomever might come to use it. But when I'm working on TUI or CLI tools, I actually care about making sure the user has a nice experience and that the whole thing is easy to use.
+I'm probably not a great UX designer. When I'm working on a GUI or anything with visual styling involved, I always end up making it appealing to me, not to whomever might come to use it. But when I'm working on TUI or CLI tools, I actually care about making sure the user has a nice experience and that the whole thing is easy to use.
 
 I only realised this after I vibe-coded a [GTK4 app](https://github.com/rly0nheart/buganize/tree/master/src/buganize/gui) for [buganize](https://github.com/rly0nheart/buganize)[^1]. I haven't even pushed more than 2 (or 3?) commits to it [the gooey], but I already feel like it's draining. I was actually thinking about hunting for bugs in buganize[^2], and the thought of the GUI existing just kind of killed my motivation. Like I don't have time for it.
 
