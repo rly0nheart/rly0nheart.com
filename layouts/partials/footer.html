@@ -1,35 +1,13 @@
 <footer id="main-footer">
-<hr />
-<!-- Action bar for subscribe and theme -->
-<div class="footer-action-bar">
-  <div class="footer-action-content">
-    <div class="subscribe-form">
-      <form action="https://api.follow.it/subscription-form/S1BkWDJHeHpXSXZWRFFkRENHOVI3MmR3OE55YitUS2FKT1dDbUNidndEUTUvb3ZBUlEwbkI4Y3Z6MU5pTGNWVVo5WHpVMElJYytoOVRoa0FKekJaZlQzNzd1UUVyVjFqZUx6Y2ovNEZoR0EwSyt4RnFSU2JCOVN2NDh1RGVGdDd8VWhHQkw3L2l0VjJUcjgyZ1Q3M240ZlZJaS8zSlUrVzBQNjlKQ0VNS3V2WT0=/8" method="post">
-        <div class="subscribe-input-wrapper">
-          <input type="email" name="email" required placeholder="your@email.com" spellcheck="false">
-          <button type="submit">Subscribe</button>
-        </div>
-      </form>
-    </div>
-    <div class="theme-controls">
-      <button class="theme-toggle theme-toggle-btn" aria-label="Toggle theme"></button>
-      <script>(function(){const l={light:'Nox',dark:'Lux'},t=localStorage.getItem('theme')||'dark',b=document.currentScript.previousElementSibling;b.textContent=l[t]})();</script>
-    </div>
+  {{ if .Site.Params.social }}
+<div id="social">
+    Find me around the web:
+  <div class="social-links">
+    {{ range .Site.Params.social }}
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{- .name -}}</a>
+    {{ end }}
   </div>
 </div>
-  {{ if .Site.Params.social }}
-<p id="social">
-    Find me around the web:
-<br />
-    {{ range $i, $e := .Site.Params.social }}
-      {{ if le $i 2 }}
-        {{if $i}} | {{end}} <a href="{{ .url }}" target="_blank">{{ with .pre }}{{ . | safeHTML }}{{ end }}{{- .name -}}</a>
-      {{ else }}
-<span class="social-extra"> | <a href="{{ .url }}" target="_blank">{{ with .pre }}{{ . | safeHTML }}{{ end }}{{- .name -}}</a></span>
-      {{ end }}
-    {{ end }}
-<button class="expand-toggle" aria-label="Toggle more social links">▼</button>
-</p>
   {{ end }}
 <p class="copyright">
     Copyright © {{ now.Format "2006"}}

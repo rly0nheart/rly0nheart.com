@@ -1,6 +1,6 @@
 ---
 title: About
-layout: default
+layout: about
 ---
 
 I'm a Software Engineer from [**Zambia**](https://en.wikipedia.org/wiki/Zambia), with 5 years of experience making and trying to break software. Most of my work involves building data, and open-source intelligence (OSINT) tools, but I also enjoy working on random side projects that sound interesting.
@@ -13,6 +13,3 @@ If you have any questions or want to chat about any of the [topics here](/catego
 
 > [!Warning]
 > I only have accounts on the platforms listed on my [Gravatar](https://gravatar.com/rly0nheart) profile, and only the profiles those links point to are mine. If a platform isn't listed there, or if any of the links don't connect to an actual profile, then it's not me (especially if it's something asking you to send money through crypto).
-
-## GitHub Contributions
-![g](https://github-readme-activity-graph.vercel.app/graph?username=rly0nheart&theme=gruvbox&hide_border=true&radius=5)

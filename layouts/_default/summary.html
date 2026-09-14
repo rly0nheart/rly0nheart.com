@@ -1,0 +1,15 @@
+<article class="summary">
+  <div class="summary-date">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2 January 2006" .Site.Params.dateFmt) }}</time>
+    <span>{{ .ReadingTime }} min read</span>
+  </div>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ with .Params.subtitle }}<h3 class="subtitle">{{ . }}</h3>{{ end }}
+  <p>{{ .Summary | plainify | htmlUnescape | truncate 240 }}</p>
+  <a class="read-more" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read post <span aria-hidden="true">↗</span></a>
+  {{ with .GetTerms "tags" }}
+    <div class="summary-tags">
+      {{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+    </div>
+  {{ end }}
+</article>

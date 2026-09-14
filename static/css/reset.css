@@ -1,130 +1,47 @@
-html {
-  overflow-y: scroll;
-}
-
 :root {
-  --bgcolor: #282828;
-  --dimcolor: #3c3836;
-  --fontcolor: #ebdbb2;
-  --linkcolor: #fe8019;
-  --linkhovercolor: #fabd2f;
-  --visitedcolor: #928374;
-  --precolor: #ebdbb2;
-  --prebgcolor: #1d2021;
-
-  --body-margin: 0;
-  --link-decoration: none;
-  --link-hover-filter: none;
-  --link-hover-decoration: none;
-  --link-hover-transition: none;
-  --heading-line-height: 1.2;
-  --code-padding: 2px;
-  --pre-padding: 24px;
-  --pre-overflow: auto;
-  --article-padding: 5px 0;
-  --center-display: block;
-  --center-margin: auto;
-  --center-width: 100%;
-  --img-display: block;
-  --img-max-width: 100%;
-  --img-height: auto;
-  --figcaption-color: #928374;
-  --figcaption-font: 12px/1.5 monospace;
-  --figcaption-text-align: center;
-  --figure-margin: auto;
-}
-
-/* Light mode: swap light colors with dark colors */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --bgcolor: #ebdbb2;
-    --dimcolor: #928374;
-    --fontcolor: #282828;
-    --linkcolor: #fe8019;
-    --linkhovercolor: #b8860b;
-    --visitedcolor: #3c3836;
-    --precolor: #282828;
-    --prebgcolor: #fbf1c7;
-  }
-}
-
-:root[data-theme="light"] {
+  color-scheme: light;
   --bgcolor: #ebdbb2;
-  --dimcolor: #928374;
+  --surface: #fbf1c7;
   --fontcolor: #282828;
-  --linkcolor: #fe8019;
-  --linkhovercolor: #b8860b;
-  --visitedcolor: #3c3836;
+  --muted: #3c3836;
+  --border: #282828;
+  --accent: #fe8019;
   --precolor: #282828;
   --prebgcolor: #fbf1c7;
 }
 
-body {
-  color: var(--fontcolor);
-  background: var(--bgcolor);
-  margin: var(--body-margin);
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bgcolor: #282828;
+  --surface: #3c3836;
+  --fontcolor: #ebdbb2;
+  --muted: #928374;
+  --border: #1d2021;
+  --accent: #fbf1c7;
+  --precolor: #ebdbb2;
+  --prebgcolor: #1d2021;
 }
 
-a {
-  text-decoration: none;
-
-}
-
-a:link {
-  color: var(--linkcolor);
-}
-
-a:visited {
-  color: var(--visitedcolor);
-}
-
-a:hover {
-  text-decoration: underline;
-  color: var(--linkhovercolor);
-}
-
-h1,
-h2,
-h3 {
-  line-height: var(--heading-line-height);
-}
-
-p > code {
-  color: var(--precolor);
-  background: var(--prebgcolor);
-  padding: var(--code-padding);
-}
-
-pre {
-  color: var(--precolor);
-  background: var(--prebgcolor);
-  padding: var(--pre-padding);
-  overflow-x: var(--pre-overflow);
-}
-
-article {
-  padding: var(--article-padding);
-}
-
-.center {
-  display: var(--center-display);
-  margin-left: var(--center-margin);
-  margin-right: var(--center-margin);
-  width: var(--center-width);
-}
-
-img {
-  display: var(--img-display);
-  max-width: var(--img-max-width);
-  height: var(--img-height);
-}
-
-figcaption {
-  color: var(--figcaption-color);
-  font: var(--figcaption-font);
-  text-align: var(--figcaption-text-align);
-}
-
-figure {
-  margin: var(--figure-margin);
-}
+* { box-sizing: border-box; }
+html { overflow-y: scroll; }
+body { margin: 0; background: var(--bgcolor); color: var(--fontcolor); font: 18px/1.75 Arial, Helvetica, sans-serif; }
+a { color: inherit; text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--fontcolor); outline-offset: 5px; }
+::selection { background: var(--accent); color: #282828; }
+h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.035em; }
+h1 { font-size: clamp(2rem, 6vw, 3.3rem); }
+h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
+img { display: block; max-width: 100%; height: auto; }
+figure { margin: 2rem 0; }
+figcaption { color: var(--muted); font-size: 0.85rem; text-align: center; }
+code, pre { font-family: Iosevka, monospace; }
+:not(pre) > code { background: var(--surface); padding: 0.1em 0.3em; overflow-wrap: anywhere; }
+pre { padding: 1.25rem; overflow-x: auto; color: var(--precolor); background: var(--prebgcolor); border: 2px solid var(--border); line-height: 1.5; }
+blockquote { margin: 2rem 0; padding: 0.1rem 1.5rem; border-left: 5px solid var(--fontcolor); }
+table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+th, td { padding: 0.5rem 0.75rem; border: 1px solid var(--muted); }
+hr { border: 0; border-top: 2px solid var(--border); margin: 2rem 0; }
+button, input { font: inherit; border-radius: 0; }
+button { cursor: pointer; }
+.center { margin-inline: auto; }

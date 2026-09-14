@@ -1,28 +1,20 @@
+<a class="skip-link" href="#content">Skip to content</a>
 <header>
-<div id="brand">
-<img
-class="icon"
-src="{{ default "images/brandIcon.svg" .Site.Params.brandIconFile | relURL }}"
-/>
-<div class="text">
-<h1>{{ .Site.Title }}</h1>
-<h3>{{ default "Description about Blog Author" .Site.Params.subtitle }}</h3>
-</div>
-</div>
-<nav id="main-nav">
-    {{ with .Site.Menus.main }}
-      {{ range $index, $value := . }}
-        {{ if le $index 3 }}
-          {{if $index}}|{{end}} <a href="{{ .URL | relURL }}"><b>{{ with .Pre }}{{ . | safeHTML }}{{ end }}{{- .Name -}}</b></a>
-        {{ else }}
-<span class="nav-extra">| <a href="{{ .URL | relURL }}"><b>{{ with .Pre }}{{ . | safeHTML }}{{ end }}{{- .Name -}}</b></a></span>
-        {{ end }}
-      {{ end }}
-<button class="expand-toggle" aria-label="Toggle more navigation items">▼</button>
+  <div id="brand">
+    <img class="icon" src="{{ .Site.Params.brandIconFile | relURL }}" alt="" width="96" height="96" />
+    <div class="text">
+      <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+      <p>{{ .Site.Params.subtitle }}</p>
+    </div>
+    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle theme">Nox</button>
+  </div>
+  <nav id="main-nav" aria-label="Main navigation">
+    {{ $page := . }}
+    {{ range .Site.Menus.main }}
+      {{ $url := .URL | relURL }}
+      {{ $exact := eq (strings.TrimRight "/" $page.RelPermalink) (strings.TrimRight "/" $url) }}
+      {{ $section := and (ne $url "/") (hasPrefix $page.RelPermalink (printf "%s/" (strings.TrimRight "/" $url))) }}
+      <a href="{{ $url }}"{{ if $exact }} aria-current="page"{{ else if $section }} aria-current="true"{{ end }}>{{ .Name }}</a>
     {{ end }}
-</nav>
-<hr/>
-<script>
-    (function(){const p=window.location.pathname;document.querySelectorAll('#main-nav a').forEach(l=>{const h=new URL(l.href).pathname;if(p===h||(h!=='/'&&p.startsWith(h)))l.style.cssText='color:var(--linkhovercolor);text-decoration:underline;pointer-events:none'})})();
-</script>
+  </nav>
 </header>

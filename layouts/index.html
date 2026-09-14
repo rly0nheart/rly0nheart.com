@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <main class="post-feed">
+    <div class="section-heading">
+      <h1>Latest posts</h1>
+      <span>Notes from the galaxy</span>
+    </div>
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+    {{ range $paginator.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+    {{ partial "pagination.html" . }}
+  </main>
+{{ end }}
