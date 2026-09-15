@@ -6,7 +6,6 @@
   --muted: #3c3836;
   --border: #282828;
   --accent: #fe8019;
-  --precolor: #282828;
   --prebgcolor: #fbf1c7;
 }
 
@@ -15,10 +14,9 @@
   --bgcolor: #282828;
   --surface: #3c3836;
   --fontcolor: #ebdbb2;
-  --muted: #928374;
+  --muted: #c0b1a2;
   --border: #1d2021;
   --accent: #fbf1c7;
-  --precolor: #ebdbb2;
   --prebgcolor: #1d2021;
 }
 
@@ -37,7 +35,7 @@ figure { margin: 2rem 0; }
 figcaption { color: var(--muted); font-size: 0.85rem; text-align: center; }
 code, pre { font-family: Iosevka, monospace; }
 :not(pre) > code { background: var(--surface); padding: 0.1em 0.3em; overflow-wrap: anywhere; }
-pre { padding: 1.25rem; overflow-x: auto; color: var(--precolor); background: var(--prebgcolor); border: 2px solid var(--border); line-height: 1.5; }
+pre { padding: 1.25rem; overflow-x: auto; color: var(--fontcolor); background: var(--prebgcolor); border: 2px solid var(--border); line-height: 1.5; }
 blockquote { margin: 2rem 0; padding: 0.1rem 1.5rem; border-left: 5px solid var(--fontcolor); }
 table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
 th, td { padding: 0.5rem 0.75rem; border: 1px solid var(--muted); }

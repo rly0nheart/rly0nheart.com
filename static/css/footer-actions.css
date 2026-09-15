@@ -1,4 +1,0 @@
-footer { margin-top: 56px; padding-top: 28px; border-top: 3px solid var(--border); }
-#social { font: 0.9rem/2 Iosevka, monospace; }
-.social-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
-.copyright { color: var(--muted); font-size: 0.8rem; margin-top: 24px; }

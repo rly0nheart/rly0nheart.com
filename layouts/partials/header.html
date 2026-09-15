@@ -6,7 +6,6 @@
       <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
       <p>{{ .Site.Params.subtitle }}</p>
     </div>
-    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle theme">Nox</button>
   </div>
   <nav id="main-nav" aria-label="Main navigation">
     {{ $page := . }}
@@ -17,4 +16,5 @@
       <a href="{{ $url }}"{{ if $exact }} aria-current="page"{{ else if $section }} aria-current="true"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
+  <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle theme">Nox</button>
 </header>
