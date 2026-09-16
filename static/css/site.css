@@ -62,6 +62,13 @@ ul#terms { display: flex; flex-wrap: wrap; list-style: none; padding: 0; gap: 10
   body { font-size: 17px; }
 }
 footer { margin-top: 56px; padding-top: 28px; border-top: 3px solid var(--border); }
+:root[data-theme="dark"] header,
+:root[data-theme="dark"] footer,
+:root[data-theme="dark"] .post-meta,
+:root[data-theme="dark"] #postsByDate li,
+:root[data-theme="dark"] th,
+:root[data-theme="dark"] td,
+:root[data-theme="dark"] hr { border-color: var(--fontcolor); }
 #social { font: 0.9rem/2 Iosevka, monospace; }
 .social-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
 @media (max-width: 600px) {

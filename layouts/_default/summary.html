@@ -5,7 +5,12 @@
   </div>
   <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{ with .Params.subtitle }}<h3 class="subtitle">{{ . }}</h3>{{ end }}
-  <p>{{ .Summary | plainify | htmlUnescape | truncate 240 }}</p>
+  {{ $lead := index (split (strings.TrimSpace .RawContent) "\n\n") 0 }}
+  {{ if hasPrefix $lead "> [!" }}
+    <div class="summary-content">{{ .RenderString $lead }}</div>
+  {{ else }}
+    <p>{{ .Summary | plainify | htmlUnescape | truncate 240 }}</p>
+  {{ end }}
   <a class="read-more" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read post <span aria-hidden="true">↗</span></a>
   {{ with .GetTerms "tags" }}
     <div class="summary-tags">
