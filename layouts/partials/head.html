@@ -16,19 +16,28 @@
 <!--Handles the theme toggle button (dark/light mode)-->
 <script>
   (() => {
-    let theme = 'light';
-    try { if (localStorage.getItem('theme') === 'dark') theme = 'dark'; } catch {}
-    document.documentElement.dataset.theme = theme;
+    const system = matchMedia('(prefers-color-scheme: dark)');
+    let savedTheme;
+    try { savedTheme = localStorage.getItem('theme'); } catch {}
+    let theme = savedTheme === 'light' || (savedTheme !== 'dark' && !system.matches) ? 'light' : 'dark';
+    const update = () => {
+      document.documentElement.dataset.theme = theme;
+      document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#ebdbb2' : '#282828';
+      const button = document.querySelector('.theme-toggle');
+      if (button) button.textContent = theme === 'light' ? 'Nox' : 'Lux';
+    };
+    update();
+    system.addEventListener('change', () => {
+      if (savedTheme === 'light' || savedTheme === 'dark') return;
+      theme = system.matches ? 'dark' : 'light';
+      update();
+    });
     document.addEventListener('DOMContentLoaded', () => {
       const button = document.querySelector('.theme-toggle');
-      const update = () => {
-        document.documentElement.dataset.theme = theme;
-        button.textContent = theme === 'light' ? 'Nox' : 'Lux';
-        document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#ebdbb2' : '#282828';
-      };
       update();
       button.addEventListener('click', () => {
         theme = theme === 'light' ? 'dark' : 'light';
+        savedTheme = theme;
         update();
         try { localStorage.setItem('theme', theme); } catch {}
       });
