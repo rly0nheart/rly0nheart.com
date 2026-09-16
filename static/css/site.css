@@ -69,3 +69,12 @@ footer { margin-top: 56px; padding-top: 28px; border-top: 3px solid var(--border
   .social-links a { flex-shrink: 0; white-space: nowrap; }
 }
 .copyright { color: var(--muted); font-size: 0.8rem; margin-top: 24px; }
+#brand, main > article, .about-card, main:has(> h1) { border-radius: 10px; }
+#brand .icon, pre { border-radius: 8px; }
+#main-nav a, .read-more, button, .social-links a, #terms a, .skip-link { border-radius: 4px; }
+.summary-tags a, :not(pre) > code { border-radius: 2px; }
+@media (max-width: 600px) {
+  #brand, main > article, .about-card, main:has(> h1) { border-radius: 6px; }
+  #brand .icon, pre { border-radius: 6px; }
+  #main-nav a, .read-more, button, .social-links a, #terms a, .summary-tags a, .skip-link { border-radius: 3px; }
+}
