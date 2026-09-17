@@ -64,11 +64,11 @@ ul#terms { display: flex; flex-wrap: wrap; list-style: none; padding: 0; gap: 10
 footer { margin-top: 56px; padding-top: 28px; border-top: 3px solid var(--border); }
 :root[data-theme="dark"] header,
 :root[data-theme="dark"] footer,
-:root[data-theme="dark"] .post-meta,
 :root[data-theme="dark"] #postsByDate li,
 :root[data-theme="dark"] th,
 :root[data-theme="dark"] td,
-:root[data-theme="dark"] hr { border-color: var(--fontcolor); }
+:root[data-theme="dark"] hr { border-color: #504945; }
+:root[data-theme="dark"] .post-meta { border-color: #7c6f64; }
 #social { font: 0.9rem/2 Iosevka, monospace; }
 .social-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
 @media (max-width: 600px) {
@@ -76,12 +76,3 @@ footer { margin-top: 56px; padding-top: 28px; border-top: 3px solid var(--border
   .social-links a { flex-shrink: 0; white-space: nowrap; }
 }
 .copyright { color: var(--muted); font-size: 0.8rem; margin-top: 24px; }
-#brand, main > article, .about-card, main:has(> h1) { border-radius: 10px; }
-#brand .icon, pre { border-radius: 8px; }
-#main-nav a, .read-more, button, .social-links a, #terms a, .skip-link { border-radius: 4px; }
-.summary-tags a, :not(pre) > code { border-radius: 2px; }
-@media (max-width: 600px) {
-  #brand, main > article, .about-card, main:has(> h1) { border-radius: 6px; }
-  #brand .icon, pre { border-radius: 6px; }
-  #main-nav a, .read-more, button, .social-links a, #terms a, .summary-tags a, .skip-link { border-radius: 3px; }
-}
