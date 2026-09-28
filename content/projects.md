@@ -3,24 +3,21 @@ title: Projects
 layout: default
 ---
 
-* [**buganize**](https://github.com/rly0nheart/buganize) — *Unofficial Python client for the Google Issue Tracking system (Buganizer)*
+* [**bugpipe**](https://github.com/rly0nheart/bugpipe) — *Unofficial Python client for Buganizer; the Google Issue Tracking system.*
 
-* [**actual**](https://codeberg.org/rly0nheart/actual) — *File carving tool for forensic image recovery.*
-
-* [**cerium**](https://codeberg.org/rly0nheart/cerium) — *A light 'ls' alternative*
-
-* [**humanly**](https://crates.io/crates/humanly) — *A pure Rust crate to convert numbers, sizes, durations, times, and percentages into human-readable formats*
-
-* [**knewkarma**](https://pypi.org/project/knewkarma) — *Toolkit for Reddit data analysis.*
-
-* [**octosuite**](https://pypi.org/project/octosuite) — *Terminal-based toolkit for GitHub data analysis.*
-
-* [**oxdork**](https://pypi.org/project/oxdork) — *Google dorking tool*
+* [**knewkarma**](https://pypi.org/project/knewkarma) — *A zero-auth toolkit for Reddit data analysis.*
 
 * [**pyahmia**](https://pypi.org/project/pyahmia) — *Search hidden services on the Tor network* 
 
-* [**searchcode-python**](https://pypi.org/project/searchcode) — *Python SDK and CLI utility for searchcode.com.*
+* [**octosuite**](https://pypi.org/project/octosuite) — *Terminal-based toolkit for GitHub data analysis.*
+
+* [**searchcode-python**](https://pypi.org/project/searchcode) — *Python SDK and CLI utility for searchcode.com. (Archived)*
 
 * [**updates-rs**](https://crates.io/crates/updates) — *A Rust library that checks for crate updates.*
+
+* [**humanly**](https://crates.io/crates/humanly) — *A pure Rust crate to convert numbers, sizes, durations, times, and percentages into human-readable formats*
+
+* [**cerium**](https://codeberg.org/rly0nheart/cerium) — *A light 'ls' alternative*
+
 
 
